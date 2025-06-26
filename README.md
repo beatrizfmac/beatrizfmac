@@ -1,5 +1,10 @@
-## Hi there 👋
+# Olá! Seja bem vindo ao meu github! <img alt="GIF" src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/powerup.gif" width="20px" />
+Meu nome é Beatriz Flausino e estou cursando ciência da computação na UNIFAL-MG  <img alt="GIF" src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Developer.gif" width="20px" />
 
+
+
+
+ <img src="https://camo.githubusercontent.com/b72bcb7182bb950ca9a2a3589ed4cd5dcb4dd9556686614ba64bf8f7d12cc02d/68747470733a2f2f73757065722e616272696c2e636f6d2e62722f77702d636f6e74656e742f75706c6f6164732f323031362f30392f73757065725f696d676761746f5f6469676974616e646f5f302e676966"> 
 <!--
 **beatrizfmac/beatrizfmac** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
