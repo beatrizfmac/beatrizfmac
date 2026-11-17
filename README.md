@@ -9,6 +9,7 @@
 
 <a href="mailto:biafmac@gmail.com"><img src="https://img.shields.io/badge/Email-biafmac%40gmail.com-8c1236?style=for-the-badge&logo=gmail&logoColor=white&labelColor=100c0e" alt="Email"></a>
 <a href="https://github.com/beatrizfmac"><img src="https://img.shields.io/badge/GitHub-beatrizfmac-bdbdca?style=for-the-badge&logo=github&logoColor=white&labelColor=100c0e" alt="GitHub"></a>
+
 <sub><i>“To become spring means accepting the risk of winter.”</i> · Antoine de Saint-Exupéry</sub>
 
 </div>
