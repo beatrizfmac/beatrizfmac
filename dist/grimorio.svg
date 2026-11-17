@@ -1,0 +1,214 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="412" viewBox="0 0 840 412" role="img">
+<defs>
+  <linearGradient id="fundo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#100c0e"/><stop offset="1" stop-color="#030203"/></linearGradient>
+  <radialGradient id="vinheta" cx=".5" cy=".45" r=".8"><stop offset=".5" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/></radialGradient>
+  <linearGradient id="sangue" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3a0717"/><stop offset=".45" stop-color="#e0446c"/><stop offset="1" stop-color="#3a0717" stop-opacity=".2"/></linearGradient>
+  <linearGradient id="sanguev" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8c1236"/><stop offset="1" stop-color="#e0446c"/></linearGradient>
+  <clipPath id="quadro"><rect x="2" y="2" width="836" height="408" rx="13"/></clipPath>
+</defs>
+<style>
+  text { font-family: 'Cinzel Decorative', Cinzel, 'Trajan Pro', 'Palatino Linotype', 'Book Antiqua', Palatino, Georgia, serif; }
+  .mono { font-family: Consolas, 'SFMono-Regular', 'DejaVu Sans Mono', monospace; }
+  @keyframes cintila { 0%,100% { opacity: .1 } 50% { opacity: .85 } }
+  @keyframes tremula { 0%,100% { transform: scale(1,1) skewX(0deg) } 25% { transform: scale(.9,1.08) skewX(4deg) } 50% { transform: scale(1.05,.93) skewX(-3deg) } 75% { transform: scale(.95,1.05) skewX(2deg) } }
+  .chama { transform-box: fill-box; transform-origin: 50% 100%; animation: tremula 1.3s ease-in-out infinite; }
+  @keyframes halo { 0%,100% { opacity: .55 } 35% { opacity: .9 } 60% { opacity: .7 } }
+  .halo { animation: halo 2.6s ease-in-out infinite; }
+  @keyframes lagrima { 0%,20% { transform: translateY(0); opacity: 0 } 30% { opacity: 1 } 90% { opacity: 1 } 100% { transform: translateY(var(--d)); opacity: 0 } }
+  .lagrima { opacity: 0; animation: lagrima 7s ease-in infinite; }
+  @keyframes flutua { 0%,100% { transform: translateY(1.5px) } 50% { transform: translateY(-2.5px) } }
+  .flutua { animation: flutua 2.8s ease-in-out infinite; }
+  @keyframes surge { from { opacity: 0; transform: translateY(8px) } to { opacity: 1; transform: translateY(0) } }
+  .surge { opacity: 0; animation: surge .7s ease-out forwards; }
+  @keyframes reflexo { 0%,60% { transform: translateX(-80px) } 100% { transform: translateX(200px) } }
+  .reflexo { animation: reflexo 5s ease-in-out infinite; }
+  @keyframes enche { from { transform: scaleX(0) } to { transform: scaleX(1) } }
+  .progresso { transform-box: fill-box; transform-origin: left; transform: scaleX(0); animation: enche 1.4s cubic-bezier(.2,.8,.2,1) .9s forwards; }
+  .lento { animation: cintila 5s ease-in-out infinite; opacity: .7; }
+</style>
+<rect x="1" y="1" width="838" height="410" rx="14" fill="url(#fundo)"/>
+<rect x="1" y="1" width="838" height="410" rx="14" fill="url(#vinheta)"/>
+<g clip-path="url(#quadro)">
+<defs>
+  <radialGradient id="chama" cx=".5" cy=".78" r=".7"><stop offset="0" stop-color="#fffbe6"/><stop offset=".3" stop-color="#ffd9a0"/><stop offset=".68" stop-color="#ff7b5c"/><stop offset="1" stop-color="#a3173f"/></radialGradient>
+  <radialGradient id="halo"><stop offset="0" stop-color="#ffd9a0" stop-opacity=".34"/><stop offset=".5" stop-color="#a3173f" stop-opacity=".12"/><stop offset="1" stop-color="#a3173f" stop-opacity="0"/></radialGradient>
+  <linearGradient id="cera" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff5e4"/><stop offset=".55" stop-color="#e6d8be"/><stop offset="1" stop-color="#ad9b7b"/></linearGradient>
+  <linearGradient id="latao" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".9"/><stop offset=".25" stop-color="#bdbdca"/><stop offset="1" stop-color="#0b0809"/></linearGradient>
+  <radialGradient id="lacre" cx=".38" cy=".32" r=".75"><stop offset="0" stop-color="#e0446c"/><stop offset=".6" stop-color="#8c1236"/><stop offset="1" stop-color="#3a0717"/></radialGradient>
+</defs>
+<circle cx="698" cy="39.4" r="0.6" fill="#eee8ea" style="opacity:.1; animation: cintila 2.4s ease-in-out 0s infinite"/>
+<circle cx="526.5" cy="40.9" r="1" fill="#eee8ea" style="opacity:.1; animation: cintila 3.1s ease-in-out 0.4s infinite"/>
+<circle cx="698.8" cy="38.6" r="1.4" fill="#eee8ea" style="opacity:.1; animation: cintila 3.8s ease-in-out 0.8s infinite"/>
+<circle cx="748" cy="36.4" r="0.6" fill="#eee8ea" style="opacity:.1; animation: cintila 4.5s ease-in-out 1.2s infinite"/>
+<circle cx="69.6" cy="48.6" r="1" fill="#eee8ea" style="opacity:.1; animation: cintila 5.2s ease-in-out 1.6s infinite"/>
+<circle cx="682.7" cy="31.2" r="1.4" fill="#eee8ea" style="opacity:.1; animation: cintila 2.4s ease-in-out 2.1s infinite"/>
+<circle cx="294.5" cy="60" r="0.6" fill="#eee8ea" style="opacity:.1; animation: cintila 3.1s ease-in-out 2.5s infinite"/>
+<circle cx="345.8" cy="25.8" r="1" fill="#eee8ea" style="opacity:.1; animation: cintila 3.8s ease-in-out 2.9s infinite"/>
+<circle cx="232.2" cy="48.8" r="1.4" fill="#eee8ea" style="opacity:.1; animation: cintila 4.5s ease-in-out 3.3s infinite"/>
+<circle cx="665.2" cy="30.3" r="0.6" fill="#eee8ea" style="opacity:.1; animation: cintila 5.2s ease-in-out 3.7s infinite"/>
+<circle cx="234.6" cy="40.9" r="1" fill="#eee8ea" style="opacity:.1; animation: cintila 2.4s ease-in-out 4.1s infinite"/>
+<circle cx="195.4" cy="33.5" r="1.4" fill="#eee8ea" style="opacity:.1; animation: cintila 3.1s ease-in-out 4.5s infinite"/>
+<text class="lento" x="30" y="42" font-size="13" font-weight="700" letter-spacing="5" fill="#bdbdca">✠ HERBÁRIO DE ESPINHOS</text>
+<text x="30" y="67" font-size="14.5" fill="#9d9196">Tudo o que reuni em <tspan fill="#eee8ea" font-weight="700">820 contribuições</tspan> nas últimas 365 noites</text>
+<rect x="28" y="84" width="440" height="176" rx="10" fill="#0b0809" stroke="#2e2226" stroke-width="2"/>
+<g class="surge" style="animation-delay:0.1s"><circle class="halo" cx="72" cy="111" r="32" fill="url(#halo)" style="animation-delay:-0s"/>
+<rect x="63" y="126" width="18" height="82" rx="2" fill="url(#cera)"/>
+<ellipse cx="72" cy="127" rx="9" ry="2.2" fill="#fffaf0"/>
+<path d="M74 127 v9 a2.2 2.2 0 0 0 4.4 0 v-9 Z" fill="#fffaf0"/>
+<ellipse class="lagrima" cx="67" cy="130" rx="1.8" ry="2.6" fill="#fffaf0" style="--d:70px; animation-delay:-0s"/>
+<line x1="72" y1="126" x2="72" y2="120" stroke="#2a1a12" stroke-width="1.6" stroke-linecap="round"/>
+<g transform="translate(72,122)"><g class="chama" style="animation-delay:-0s">
+  <path d="M0 -24 C6.5 -14 7.5 -6.5 0 0 C-7.5 -6.5 -6.5 -14 0 -24 Z" fill="url(#chama)"/>
+  <path d="M0 -12 C3 -7 3.2 -3 0 0 C-3.2 -3 -3 -7 0 -12 Z" fill="#fffbe8"/>
+</g></g>
+<ellipse cx="72" cy="210" rx="18" ry="4" fill="url(#latao)"/>
+<rect x="68.5" y="210" width="7" height="7" fill="url(#latao)"/>
+<ellipse cx="72" cy="218" rx="14" ry="3.6" fill="url(#latao)"/>
+<path d="M72 209.5 l3.2 3.5 l-3.2 3.5 l-3.2 -3.5 Z" fill="#f1e05a" stroke="#1a0a0f" stroke-width=".8"/>
+<text x="72" y="238" text-anchor="middle" font-size="12.5" font-weight="700" fill="#eee8ea">JavaScript</text>
+<text x="72" y="252" text-anchor="middle" font-size="10.5" class="mono" fill="#9d9196">42%</text></g>
+<g class="surge" style="animation-delay:0.2s"><circle class="halo" cx="160" cy="134" r="32" fill="url(#halo)" style="animation-delay:-0.7s"/>
+<rect x="151" y="149" width="18" height="59" rx="2" fill="url(#cera)"/>
+<ellipse cx="160" cy="150" rx="9" ry="2.2" fill="#fffaf0"/>
+<path d="M162 150 v14 a2.2 2.2 0 0 0 4.4 0 v-14 Z" fill="#fffaf0"/>
+<ellipse class="lagrima" cx="155" cy="153" rx="1.8" ry="2.6" fill="#fffaf0" style="--d:47px; animation-delay:-1.9s"/>
+<line x1="160" y1="149" x2="160" y2="143" stroke="#2a1a12" stroke-width="1.6" stroke-linecap="round"/>
+<g transform="translate(160,145)"><g class="chama" style="animation-delay:-0.4s">
+  <path d="M0 -24 C6.5 -14 7.5 -6.5 0 0 C-7.5 -6.5 -6.5 -14 0 -24 Z" fill="url(#chama)"/>
+  <path d="M0 -12 C3 -7 3.2 -3 0 0 C-3.2 -3 -3 -7 0 -12 Z" fill="#fffbe8"/>
+</g></g>
+<ellipse cx="160" cy="210" rx="18" ry="4" fill="url(#latao)"/>
+<rect x="156.5" y="210" width="7" height="7" fill="url(#latao)"/>
+<ellipse cx="160" cy="218" rx="14" ry="3.6" fill="url(#latao)"/>
+<path d="M160 209.5 l3.2 3.5 l-3.2 3.5 l-3.2 -3.5 Z" fill="#3572A5" stroke="#1a0a0f" stroke-width=".8"/>
+<text x="160" y="238" text-anchor="middle" font-size="12.5" font-weight="700" fill="#eee8ea">Python</text>
+<text x="160" y="252" text-anchor="middle" font-size="10.5" class="mono" fill="#9d9196">25%</text></g>
+<g class="surge" style="animation-delay:0.3s"><circle class="halo" cx="248" cy="149" r="32" fill="url(#halo)" style="animation-delay:-1.4s"/>
+<rect x="239" y="164" width="18" height="44" rx="2" fill="url(#cera)"/>
+<ellipse cx="248" cy="165" rx="9" ry="2.2" fill="#fffaf0"/>
+<path d="M250 165 v19 a2.2 2.2 0 0 0 4.4 0 v-19 Z" fill="#fffaf0"/>
+<ellipse class="lagrima" cx="243" cy="168" rx="1.8" ry="2.6" fill="#fffaf0" style="--d:32px; animation-delay:-3.8s"/>
+<line x1="248" y1="164" x2="248" y2="158" stroke="#2a1a12" stroke-width="1.6" stroke-linecap="round"/>
+<g transform="translate(248,160)"><g class="chama" style="animation-delay:-0.7s">
+  <path d="M0 -24 C6.5 -14 7.5 -6.5 0 0 C-7.5 -6.5 -6.5 -14 0 -24 Z" fill="url(#chama)"/>
+  <path d="M0 -12 C3 -7 3.2 -3 0 0 C-3.2 -3 -3 -7 0 -12 Z" fill="#fffbe8"/>
+</g></g>
+<ellipse cx="248" cy="210" rx="18" ry="4" fill="url(#latao)"/>
+<rect x="244.5" y="210" width="7" height="7" fill="url(#latao)"/>
+<ellipse cx="248" cy="218" rx="14" ry="3.6" fill="url(#latao)"/>
+<path d="M248 209.5 l3.2 3.5 l-3.2 3.5 l-3.2 -3.5 Z" fill="#e34c26" stroke="#1a0a0f" stroke-width=".8"/>
+<text x="248" y="238" text-anchor="middle" font-size="12.5" font-weight="700" fill="#eee8ea">HTML</text>
+<text x="248" y="252" text-anchor="middle" font-size="10.5" class="mono" fill="#9d9196">15%</text></g>
+<g class="surge" style="animation-delay:0.5s"><circle class="halo" cx="336" cy="156" r="32" fill="url(#halo)" style="animation-delay:-2.1s"/>
+<rect x="327" y="171" width="18" height="37" rx="2" fill="url(#cera)"/>
+<ellipse cx="336" cy="172" rx="9" ry="2.2" fill="#fffaf0"/>
+<path d="M338 172 v9 a2.2 2.2 0 0 0 4.4 0 v-9 Z" fill="#fffaf0"/>
+<ellipse class="lagrima" cx="331" cy="175" rx="1.8" ry="2.6" fill="#fffaf0" style="--d:25px; animation-delay:-5.7s"/>
+<line x1="336" y1="171" x2="336" y2="165" stroke="#2a1a12" stroke-width="1.6" stroke-linecap="round"/>
+<g transform="translate(336,167)"><g class="chama" style="animation-delay:-1.1s">
+  <path d="M0 -24 C6.5 -14 7.5 -6.5 0 0 C-7.5 -6.5 -6.5 -14 0 -24 Z" fill="url(#chama)"/>
+  <path d="M0 -12 C3 -7 3.2 -3 0 0 C-3.2 -3 -3 -7 0 -12 Z" fill="#fffbe8"/>
+</g></g>
+<ellipse cx="336" cy="210" rx="18" ry="4" fill="url(#latao)"/>
+<rect x="332.5" y="210" width="7" height="7" fill="url(#latao)"/>
+<ellipse cx="336" cy="218" rx="14" ry="3.6" fill="url(#latao)"/>
+<path d="M336 209.5 l3.2 3.5 l-3.2 3.5 l-3.2 -3.5 Z" fill="#663399" stroke="#1a0a0f" stroke-width=".8"/>
+<text x="336" y="238" text-anchor="middle" font-size="12.5" font-weight="700" fill="#eee8ea">CSS</text>
+<text x="336" y="252" text-anchor="middle" font-size="10.5" class="mono" fill="#9d9196">10%</text></g>
+<g class="surge" style="animation-delay:0.6s"><circle class="halo" cx="424" cy="161" r="32" fill="url(#halo)" style="animation-delay:-2.8s"/>
+<rect x="415" y="176" width="18" height="32" rx="2" fill="url(#cera)"/>
+<ellipse cx="424" cy="177" rx="9" ry="2.2" fill="#fffaf0"/>
+<path d="M426 177 v14 a2.2 2.2 0 0 0 4.4 0 v-14 Z" fill="#fffaf0"/>
+<ellipse class="lagrima" cx="419" cy="180" rx="1.8" ry="2.6" fill="#fffaf0" style="--d:20px; animation-delay:-7.6s"/>
+<line x1="424" y1="176" x2="424" y2="170" stroke="#2a1a12" stroke-width="1.6" stroke-linecap="round"/>
+<g transform="translate(424,172)"><g class="chama" style="animation-delay:-1.5s">
+  <path d="M0 -24 C6.5 -14 7.5 -6.5 0 0 C-7.5 -6.5 -6.5 -14 0 -24 Z" fill="url(#chama)"/>
+  <path d="M0 -12 C3 -7 3.2 -3 0 0 C-3.2 -3 -3 -7 0 -12 Z" fill="#fffbe8"/>
+</g></g>
+<ellipse cx="424" cy="210" rx="18" ry="4" fill="url(#latao)"/>
+<rect x="420.5" y="210" width="7" height="7" fill="url(#latao)"/>
+<ellipse cx="424" cy="218" rx="14" ry="3.6" fill="url(#latao)"/>
+<path d="M424 209.5 l3.2 3.5 l-3.2 3.5 l-3.2 -3.5 Z" fill="#178600" stroke="#1a0a0f" stroke-width=".8"/>
+<text x="424" y="238" text-anchor="middle" font-size="12.5" font-weight="700" fill="#eee8ea">C#</text>
+<text x="424" y="252" text-anchor="middle" font-size="10.5" class="mono" fill="#9d9196">6%</text></g>
+<g class="surge" style="animation-delay:.6s"><rect x="488" y="84" width="324" height="176" rx="10" fill="#0b0809" stroke="#2e2226" stroke-width="2"/>
+<g transform="translate(514,108)">
+  <path d="M-7 -6 H7 C6.5 -1 3.8 1 0 1 C-3.8 1 -6.5 -1 -7 -6 Z" fill="#8c1236"/>
+  <path d="M-8 -10 H8 C8 -2 4.5 2 0 2 C-4.5 2 -8 -2 -8 -10 Z" fill="none" stroke="#bdbdca" stroke-width="1.6" stroke-linejoin="round"/>
+  <rect x="-1" y="2" width="2" height="6" fill="#bdbdca"/><path d="M-6 10.5 Q0 6.5 6 10.5 Z" fill="#bdbdca"/></g>
+<text x="538" y="113" font-size="13.5" fill="#9d9196">Gotas de sangue (commits)</text><text x="794" y="114" text-anchor="end" font-size="18" font-weight="700" fill="#eee8ea">705</text>
+<rect x="504" y="128" width="292" height="1" fill="#2e2226"/>
+<g transform="translate(514,150)">
+  <path d="M-4 -11 H4 L8 -5 L5 11 H-5 L-8 -5 Z" fill="#3a1d16" stroke="#9a6b48" stroke-width="1.4" stroke-linejoin="round"/>
+  <path d="M0 -6 V5 M-3.5 -2.5 H3.5" stroke="#bdbdca" stroke-width="1.6" stroke-linecap="round"/></g>
+<text x="538" y="155" font-size="13.5" fill="#9d9196">Caixões (repositórios)</text><text x="794" y="156" text-anchor="end" font-size="18" font-weight="700" fill="#eee8ea">12</text>
+<rect x="504" y="170" width="292" height="1" fill="#2e2226"/>
+<g transform="translate(514,192)">
+  <rect x="-9" y="-10" width="15" height="19" rx="1.5" fill="#e9dcc0"/>
+  <path d="M-6 -6 h9 M-6 -2.5 h9 M-6 1 h6" stroke="#8c7350" stroke-width="1.2" stroke-linecap="round"/>
+  <circle cx="5" cy="6" r="5" fill="#8c1236"/><circle cx="5" cy="6" r="2.4" fill="none" stroke="#fff" stroke-opacity=".45" stroke-width=".9"/></g>
+<text x="538" y="197" font-size="13.5" fill="#9d9196">Pactos selados (PRs e issues)</text><text x="794" y="198" text-anchor="end" font-size="18" font-weight="700" fill="#eee8ea">7</text>
+<rect x="504" y="212" width="292" height="1" fill="#2e2226"/>
+<g transform="translate(514,234)"><g class="flutua">
+  <path d="M-7 10 V-2 A7 7 0 0 1 7 -2 V10 L4.7 7.6 L2.3 10 L0 7.6 L-2.3 10 L-4.7 7.6 Z" fill="#eee8ea" fill-opacity=".92"/>
+  <circle cx="-2.6" cy="-1.5" r="1.4" fill="#100c0e"/><circle cx="2.6" cy="-1.5" r="1.4" fill="#100c0e"/></g></g>
+<text x="538" y="239" font-size="13.5" fill="#9d9196">Almas (estrelas e seguidores)</text><text x="794" y="240" text-anchor="end" font-size="18" font-weight="700" fill="#eee8ea">23</text>
+</g>
+<text x="30" y="292" font-size="12" font-weight="700" letter-spacing="3.5" fill="#bdbdca">MALDIÇÕES DESPERTADAS<tspan dx="10" letter-spacing="0" font-weight="400" fill="#9d9196">· 5 de 6</tspan></text>
+<g class="surge" style="animation-delay:0.9s"><rect x="28" y="304" width="124" height="66" rx="9" fill="#0b0809" stroke="#8c1236" stroke-opacity="0.8" stroke-width="1.5"/><defs><clipPath id="m0"><rect x="28" y="304" width="124" height="66" rx="9"/></clipPath></defs><g clip-path="url(#m0)"><g class="reflexo" style="animation-delay:0s"><rect x="28" y="294" width="24" height="90" fill="#fff" fill-opacity=".06" transform="skewX(-20)"/></g></g><circle cx="60.5" cy="335" r="3" fill="url(#lacre)"/><circle cx="56.5" cy="345.6" r="3.6" fill="url(#lacre)"/><circle cx="44.1" cy="345.4" r="4.2" fill="url(#lacre)"/><circle cx="36.2" cy="337.3" r="3" fill="url(#lacre)"/><circle cx="41.6" cy="326.2" r="3.6" fill="url(#lacre)"/><circle cx="53.4" cy="322.8" r="4.2" fill="url(#lacre)"/><circle cx="49" cy="335" r="12.5" fill="url(#lacre)"/>
+<circle cx="49" cy="335" r="9" fill="none" stroke="#000" stroke-opacity=".35" stroke-width="1"/>
+<g transform="translate(49,335.5) scale(.33)"><path d="M0 -5 L-2 -9.5 L-3.2 -4.2 C-6 -5 -10 -9 -15 -10 C-18.5 -10 -21 -8 -23 -5 C-20 -5 -18 -3 -17 0 C-15 -2 -12 -2 -10 1 C-8 -1 -5 -1 -3 3 L0 6 L3 3 C5 -1 8 -1 10 1 C12 -2 15 -2 17 0 C18 -3 20 -5 23 -5 C21 -8 18.5 -10 15 -10 C10 -9 6 -5 3.2 -4.2 L2 -9.5 Z" fill="#000" fill-opacity=".55"/></g>
+<text x="68" y="329" font-size="11.5" font-weight="700" fill="#eee8ea">1ª mordida</text>
+<text x="68" y="343" font-size="9" fill="#9d9196">1 repositório</text><text x="68" y="359" font-size="10" font-weight="700" fill="#e0446c">✓ despertada</text></g>
+<g class="surge" style="animation-delay:1s"><rect x="160" y="304" width="124" height="66" rx="9" fill="#0b0809" stroke="#8c1236" stroke-opacity="0.8" stroke-width="1.5"/><defs><clipPath id="m1"><rect x="160" y="304" width="124" height="66" rx="9"/></clipPath></defs><g clip-path="url(#m1)"><g class="reflexo" style="animation-delay:0.8s"><rect x="160" y="294" width="24" height="90" fill="#fff" fill-opacity=".06" transform="skewX(-20)"/></g></g><circle cx="192.5" cy="335" r="3" fill="url(#lacre)"/><circle cx="188.5" cy="345.6" r="3.6" fill="url(#lacre)"/><circle cx="176.1" cy="345.4" r="4.2" fill="url(#lacre)"/><circle cx="168.2" cy="337.3" r="3" fill="url(#lacre)"/><circle cx="173.6" cy="326.2" r="3.6" fill="url(#lacre)"/><circle cx="185.4" cy="322.8" r="4.2" fill="url(#lacre)"/><circle cx="181" cy="335" r="12.5" fill="url(#lacre)"/>
+<circle cx="181" cy="335" r="9" fill="none" stroke="#000" stroke-opacity=".35" stroke-width="1"/>
+<g transform="translate(181,335.5) scale(.33)"><path d="M0 -5 L-2 -9.5 L-3.2 -4.2 C-6 -5 -10 -9 -15 -10 C-18.5 -10 -21 -8 -23 -5 C-20 -5 -18 -3 -17 0 C-15 -2 -12 -2 -10 1 C-8 -1 -5 -1 -3 3 L0 6 L3 3 C5 -1 8 -1 10 1 C12 -2 15 -2 17 0 C18 -3 20 -5 23 -5 C21 -8 18.5 -10 15 -10 C10 -9 6 -5 3.2 -4.2 L2 -9.5 Z" fill="#000" fill-opacity=".55"/></g>
+<text x="200" y="329" font-size="11.5" font-weight="700" fill="#eee8ea">Poliglota</text>
+<text x="200" y="343" font-size="9" fill="#9d9196">5 linguagens</text><text x="200" y="359" font-size="10" font-weight="700" fill="#e0446c">✓ despertada</text></g>
+<g class="surge" style="animation-delay:1.1s"><rect x="292" y="304" width="124" height="66" rx="9" fill="#0b0809" stroke="#8c1236" stroke-opacity="0.8" stroke-width="1.5"/><defs><clipPath id="m2"><rect x="292" y="304" width="124" height="66" rx="9"/></clipPath></defs><g clip-path="url(#m2)"><g class="reflexo" style="animation-delay:1.6s"><rect x="292" y="294" width="24" height="90" fill="#fff" fill-opacity=".06" transform="skewX(-20)"/></g></g><circle cx="324.5" cy="335" r="3" fill="url(#lacre)"/><circle cx="320.5" cy="345.6" r="3.6" fill="url(#lacre)"/><circle cx="308.1" cy="345.4" r="4.2" fill="url(#lacre)"/><circle cx="300.2" cy="337.3" r="3" fill="url(#lacre)"/><circle cx="305.6" cy="326.2" r="3.6" fill="url(#lacre)"/><circle cx="317.4" cy="322.8" r="4.2" fill="url(#lacre)"/><circle cx="313" cy="335" r="12.5" fill="url(#lacre)"/>
+<circle cx="313" cy="335" r="9" fill="none" stroke="#000" stroke-opacity=".35" stroke-width="1"/>
+<g transform="translate(313,335.5) scale(.33)"><path d="M0 -5 L-2 -9.5 L-3.2 -4.2 C-6 -5 -10 -9 -15 -10 C-18.5 -10 -21 -8 -23 -5 C-20 -5 -18 -3 -17 0 C-15 -2 -12 -2 -10 1 C-8 -1 -5 -1 -3 3 L0 6 L3 3 C5 -1 8 -1 10 1 C12 -2 15 -2 17 0 C18 -3 20 -5 23 -5 C21 -8 18.5 -10 15 -10 C10 -9 6 -5 3.2 -4.2 L2 -9.5 Z" fill="#000" fill-opacity=".55"/></g>
+<text x="332" y="329" font-size="11.5" font-weight="700" fill="#eee8ea">Cripta cheia</text>
+<text x="332" y="343" font-size="9" fill="#9d9196">10 repositórios</text><text x="332" y="359" font-size="10" font-weight="700" fill="#e0446c">✓ despertada</text></g>
+<g class="surge" style="animation-delay:1.2s"><rect x="424" y="304" width="124" height="66" rx="9" fill="#0b0809" stroke="#8c1236" stroke-opacity="0.8" stroke-width="1.5"/><defs><clipPath id="m3"><rect x="424" y="304" width="124" height="66" rx="9"/></clipPath></defs><g clip-path="url(#m3)"><g class="reflexo" style="animation-delay:2.4s"><rect x="424" y="294" width="24" height="90" fill="#fff" fill-opacity=".06" transform="skewX(-20)"/></g></g><circle cx="456.5" cy="335" r="3" fill="url(#lacre)"/><circle cx="452.5" cy="345.6" r="3.6" fill="url(#lacre)"/><circle cx="440.1" cy="345.4" r="4.2" fill="url(#lacre)"/><circle cx="432.2" cy="337.3" r="3" fill="url(#lacre)"/><circle cx="437.6" cy="326.2" r="3.6" fill="url(#lacre)"/><circle cx="449.4" cy="322.8" r="4.2" fill="url(#lacre)"/><circle cx="445" cy="335" r="12.5" fill="url(#lacre)"/>
+<circle cx="445" cy="335" r="9" fill="none" stroke="#000" stroke-opacity=".35" stroke-width="1"/>
+<g transform="translate(445,335.5) scale(.33)"><path d="M0 -5 L-2 -9.5 L-3.2 -4.2 C-6 -5 -10 -9 -15 -10 C-18.5 -10 -21 -8 -23 -5 C-20 -5 -18 -3 -17 0 C-15 -2 -12 -2 -10 1 C-8 -1 -5 -1 -3 3 L0 6 L3 3 C5 -1 8 -1 10 1 C12 -2 15 -2 17 0 C18 -3 20 -5 23 -5 C21 -8 18.5 -10 15 -10 C10 -9 6 -5 3.2 -4.2 L2 -9.5 Z" fill="#000" fill-opacity=".55"/></g>
+<text x="464" y="329" font-size="11.5" font-weight="700" fill="#eee8ea">Sete noites</text>
+<text x="464" y="343" font-size="9" fill="#9d9196">7 dias seguidos</text><text x="464" y="359" font-size="10" font-weight="700" fill="#e0446c">✓ despertada</text></g>
+<g class="surge" style="animation-delay:1.3s"><rect x="556" y="304" width="124" height="66" rx="9" fill="#0b0809" stroke="#2e2226" stroke-opacity="1" stroke-width="2"/><circle cx="577" cy="335" r="13" fill="#100c0e" stroke="#2e2226" stroke-width="1.5"/>
+<rect x="571.5" y="334" width="11" height="8.5" rx="1.8" fill="#9d9196" fill-opacity=".7"/>
+<path d="M573.8 334 v-2.6 a3.2 3.2 0 0 1 6.4 0 v2.6" fill="none" stroke="#9d9196" stroke-opacity=".7" stroke-width="1.8"/>
+<text x="596" y="329" font-size="11.5" font-weight="700" fill="#9d9196">Conclave</text>
+<text x="596" y="343" font-size="9" fill="#9d9196">10 PRs ou issues</text><rect x="596" y="353" width="42" height="5" rx="2.5" fill="#2e2226"/>
+<rect class="progresso" x="596" y="353" width="29.4" height="5" rx="2.5" fill="url(#sangue)"/>
+<text x="672" y="359" text-anchor="end" font-size="9.5" class="mono" fill="#9d9196">7/10</text></g>
+<g class="surge" style="animation-delay:1.4s"><rect x="688" y="304" width="124" height="66" rx="9" fill="#0b0809" stroke="#8c1236" stroke-opacity="0.8" stroke-width="1.5"/><defs><clipPath id="m5"><rect x="688" y="304" width="124" height="66" rx="9"/></clipPath></defs><g clip-path="url(#m5)"><g class="reflexo" style="animation-delay:4s"><rect x="688" y="294" width="24" height="90" fill="#fff" fill-opacity=".06" transform="skewX(-20)"/></g></g><circle cx="720.5" cy="335" r="3" fill="url(#lacre)"/><circle cx="716.5" cy="345.6" r="3.6" fill="url(#lacre)"/><circle cx="704.1" cy="345.4" r="4.2" fill="url(#lacre)"/><circle cx="696.2" cy="337.3" r="3" fill="url(#lacre)"/><circle cx="701.6" cy="326.2" r="3.6" fill="url(#lacre)"/><circle cx="713.4" cy="322.8" r="4.2" fill="url(#lacre)"/><circle cx="709" cy="335" r="12.5" fill="url(#lacre)"/>
+<circle cx="709" cy="335" r="9" fill="none" stroke="#000" stroke-opacity=".35" stroke-width="1"/>
+<g transform="translate(709,335.5) scale(.33)"><path d="M0 -5 L-2 -9.5 L-3.2 -4.2 C-6 -5 -10 -9 -15 -10 C-18.5 -10 -21 -8 -23 -5 C-20 -5 -18 -3 -17 0 C-15 -2 -12 -2 -10 1 C-8 -1 -5 -1 -3 3 L0 6 L3 3 C5 -1 8 -1 10 1 C12 -2 15 -2 17 0 C18 -3 20 -5 23 -5 C21 -8 18.5 -10 15 -10 C10 -9 6 -5 3.2 -4.2 L2 -9.5 Z" fill="#000" fill-opacity=".55"/></g>
+<text x="728" y="329" font-size="11.5" font-weight="700" fill="#eee8ea">Um século</text>
+<text x="728" y="343" font-size="9" fill="#9d9196">100 contribuições</text><text x="728" y="359" font-size="10" font-weight="700" fill="#e0446c">✓ despertada</text></g>
+<text x="778" y="390" text-anchor="end" font-size="10.5" fill="#9d9196" fill-opacity=".8">relíquias e maldições calculadas a partir dos dados públicos do GitHub · atualizado em 17/11/2026</text>
+</g>
+<rect x="1" y="1" width="838" height="410" rx="14" fill="none" stroke="#2e2226" stroke-width="2"/>
+<rect x="8" y="8" width="824" height="396" rx="9" fill="none" stroke="#bdbdca" stroke-opacity=".2"/>
+<g transform="translate(0,0) scale(1,1)">
+  <path d="M14 42 V21 Q14 14 21 14 H42" fill="none" stroke="#bdbdca" stroke-opacity=".75" stroke-width="1.4"/>
+  <path d="M19 31 V24 Q19 19 24 19 H31" fill="none" stroke="#bdbdca" stroke-opacity=".45" stroke-width="1"/>
+  <path d="M14 46 l2.2 3.2 l-2.2 3.2 l-2.2 -3.2 Z M46 14 l3.2 -2.2 l3.2 2.2 l-3.2 2.2 Z" fill="#bdbdca" fill-opacity=".8"/>
+</g>
+<g transform="translate(840,0) scale(-1,1)">
+  <path d="M14 42 V21 Q14 14 21 14 H42" fill="none" stroke="#bdbdca" stroke-opacity=".75" stroke-width="1.4"/>
+  <path d="M19 31 V24 Q19 19 24 19 H31" fill="none" stroke="#bdbdca" stroke-opacity=".45" stroke-width="1"/>
+  <path d="M14 46 l2.2 3.2 l-2.2 3.2 l-2.2 -3.2 Z M46 14 l3.2 -2.2 l3.2 2.2 l-3.2 2.2 Z" fill="#bdbdca" fill-opacity=".8"/>
+</g>
+<g transform="translate(0,412) scale(1,-1)">
+  <path d="M14 42 V21 Q14 14 21 14 H42" fill="none" stroke="#bdbdca" stroke-opacity=".75" stroke-width="1.4"/>
+  <path d="M19 31 V24 Q19 19 24 19 H31" fill="none" stroke="#bdbdca" stroke-opacity=".45" stroke-width="1"/>
+  <path d="M14 46 l2.2 3.2 l-2.2 3.2 l-2.2 -3.2 Z M46 14 l3.2 -2.2 l3.2 2.2 l-3.2 2.2 Z" fill="#bdbdca" fill-opacity=".8"/>
+</g>
+<g transform="translate(840,412) scale(-1,-1)">
+  <path d="M14 42 V21 Q14 14 21 14 H42" fill="none" stroke="#bdbdca" stroke-opacity=".75" stroke-width="1.4"/>
+  <path d="M19 31 V24 Q19 19 24 19 H31" fill="none" stroke="#bdbdca" stroke-opacity=".45" stroke-width="1"/>
+  <path d="M14 46 l2.2 3.2 l-2.2 3.2 l-2.2 -3.2 Z M46 14 l3.2 -2.2 l3.2 2.2 l-3.2 2.2 Z" fill="#bdbdca" fill-opacity=".8"/>
+</g>
+</svg>

@@ -1,0 +1,43 @@
+name: Despertar as artes do perfil
+
+on:
+  schedule:
+    - cron: "33 3 * * *"   # todo dia à meia-noite e meia (horário de Brasília), claro
+  workflow_dispatch:         # botão "Run workflow" na aba Actions
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - ".github/workflows/atualizar-svgs.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: atualizar-svgs
+  cancel-in-progress: true
+
+jobs:
+  gerar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Gerar SVGs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USER: ${{ github.repository_owner }}
+        run: node scripts/gerar-svgs.mjs
+
+      - name: Salvar se mudou
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist
+          git diff --cached --quiet && echo "Nada mudou." && exit 0
+          git commit -m "Desperta as artes do perfil [skip ci]"
+          git push

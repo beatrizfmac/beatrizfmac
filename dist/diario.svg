@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="196" viewBox="0 0 840 196" role="img">
+<defs>
+  <linearGradient id="fundo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#100c0e"/><stop offset="1" stop-color="#030203"/></linearGradient>
+  <radialGradient id="vinheta" cx=".5" cy=".45" r=".8"><stop offset=".5" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/></radialGradient>
+  <linearGradient id="sangue" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3a0717"/><stop offset=".45" stop-color="#e0446c"/><stop offset="1" stop-color="#3a0717" stop-opacity=".2"/></linearGradient>
+  <linearGradient id="sanguev" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8c1236"/><stop offset="1" stop-color="#e0446c"/></linearGradient>
+  <clipPath id="quadro"><rect x="2" y="2" width="836" height="192" rx="13"/></clipPath>
+</defs>
+<style>
+  text { font-family: 'Cinzel Decorative', Cinzel, 'Trajan Pro', 'Palatino Linotype', 'Book Antiqua', Palatino, Georgia, serif; }
+  .mono { font-family: Consolas, 'SFMono-Regular', 'DejaVu Sans Mono', monospace; }
+  @keyframes cintila { 0%,100% { opacity: .1 } 50% { opacity: .85 } }
+  @keyframes gira { to { transform: rotate(360deg) } }
+  .gira { animation: gira 3.5s linear infinite; }
+  .lento { animation: cintila 5s ease-in-out infinite; opacity: .7; }
+  @keyframes respira { 0%,100% { transform: scale(1) rotate(0deg) } 50% { transform: scale(1.05) rotate(4deg) } }
+  .respira { animation: respira 6s ease-in-out infinite; }
+</style>
+<rect x="1" y="1" width="838" height="194" rx="14" fill="url(#fundo)"/>
+<rect x="1" y="1" width="838" height="194" rx="14" fill="url(#vinheta)"/>
+<g clip-path="url(#quadro)">
+<defs>
+  <radialGradient id="petala1" cx=".5" cy="1" r="1.1"><stop offset="0" stop-color="#050102"/><stop offset=".55" stop-color="#3a0717"/><stop offset="1" stop-color="#8c1236"/></radialGradient>
+  <radialGradient id="petala2" cx=".5" cy="1" r="1.1"><stop offset="0" stop-color="#030001"/><stop offset=".65" stop-color="#2b0510"/><stop offset="1" stop-color="#e0446c"/></radialGradient>
+  <radialGradient id="petala3" cx=".5" cy="1" r="1"><stop offset="0" stop-color="#000"/><stop offset=".7" stop-color="#1d030a"/><stop offset="1" stop-color="#8c1236"/></radialGradient></defs>
+<circle cx="97.4" cy="18.5" r="0.6" fill="#eee8ea" style="opacity:.1; animation: cintila 2.4s ease-in-out 0s infinite"/>
+<circle cx="524.6" cy="27" r="1" fill="#eee8ea" style="opacity:.1; animation: cintila 3.1s ease-in-out 0.4s infinite"/>
+<circle cx="280.6" cy="23.7" r="1.4" fill="#eee8ea" style="opacity:.1; animation: cintila 3.8s ease-in-out 0.8s infinite"/>
+<circle cx="429.6" cy="50.3" r="0.6" fill="#eee8ea" style="opacity:.1; animation: cintila 4.5s ease-in-out 1.2s infinite"/>
+<circle cx="678.2" cy="16.3" r="1" fill="#eee8ea" style="opacity:.1; animation: cintila 5.2s ease-in-out 1.6s infinite"/>
+<circle cx="585.3" cy="23.5" r="1.4" fill="#eee8ea" style="opacity:.1; animation: cintila 2.4s ease-in-out 2.1s infinite"/>
+<circle cx="92.3" cy="51.5" r="0.6" fill="#eee8ea" style="opacity:.1; animation: cintila 3.1s ease-in-out 2.5s infinite"/>
+<circle cx="688.8" cy="33" r="1" fill="#eee8ea" style="opacity:.1; animation: cintila 3.8s ease-in-out 2.9s infinite"/>
+<circle cx="611.1" cy="18" r="1.4" fill="#eee8ea" style="opacity:.1; animation: cintila 4.5s ease-in-out 3.3s infinite"/>
+<circle cx="382.3" cy="39.6" r="0.6" fill="#eee8ea" style="opacity:.1; animation: cintila 5.2s ease-in-out 3.7s infinite"/>
+<text class="lento" x="30" y="42" font-size="12" font-weight="700" letter-spacing="4.5" fill="#bdbdca">✠ DIÁRIO DA NOITE</text>
+<text x="810" y="42" text-anchor="end" font-size="11.5" fill="#9d9196">anotado em 17/11/2026</text>
+<rect x="28" y="62" width="388" height="48" rx="10" fill="#0b0809" stroke="#2e2226" stroke-width="2"/>
+<path d="M58 98 V85" stroke="#2b3b30" stroke-width="2" stroke-linecap="round"/><g transform="translate(58,93) rotate(-30) scale(0.55)"><path d="M0 0 C5 -5 13 -5 18 0 C13 5 5 5 0 0 Z" fill="#2b3b30"/><path d="M1 0 H16" stroke="#3d5243" stroke-width=".8"/></g><g transform="translate(58,90) rotate(210) scale(0.5)"><path d="M0 0 C5 -5 13 -5 18 0 C13 5 5 5 0 0 Z" fill="#2b3b30"/><path d="M1 0 H16" stroke="#3d5243" stroke-width=".8"/></g><g transform="translate(58,85) scale(1)"><path d="M0 2 C-5 -2 -4 -9 0 -12 C4 -9 5 -2 0 2 Z" fill="url(#petala1)" stroke="#000" stroke-opacity=".5" stroke-width=".7"/><path d="M0 3 L-5 -3 M0 3 L5 -3 M0 3 L0 -4" stroke="#2b3b30" stroke-width="1.6" stroke-linecap="round"/></g>
+<text x="86" y="81" font-size="9.5" font-weight="700" letter-spacing="3" fill="#bdbdca">CULTIVANDO</text>
+<text x="86" y="99" font-size="14.5" fill="#eee8ea">Web com .NET e React</text>
+<rect x="424" y="62" width="388" height="48" rx="10" fill="#0b0809" stroke="#2e2226" stroke-width="2"/>
+<g transform="translate(454,86)">
+  <path d="M-12 -7 Q-6 -10 0 -7 V9 Q-6 6 -12 9 Z" fill="#eee8ea" fill-opacity=".9"/><path d="M12 -7 Q6 -10 0 -7 V9 Q6 6 12 9 Z" fill="#eee8ea" fill-opacity=".75"/>
+  <path d="M-9.5 -3 Q-6 -4.5 -2.5 -3 M-9.5 0.5 Q-6 -1 -2.5 0.5 M-9.5 4 Q-6 2.5 -2.5 4" stroke="#9d9196" stroke-width=".8" fill="none"/>
+  <path d="M5 -8 V5 l2 -2 l2 2 V-8 Z" fill="#8c1236"/></g>
+<text x="482" y="81" font-size="9.5" font-weight="700" letter-spacing="3" fill="#bdbdca">LENDO</text>
+<text x="482" y="99" font-size="14.5" fill="#eee8ea">O Estrangeiro, de Albert Camus</text>
+<rect x="28" y="120" width="388" height="48" rx="10" fill="#0b0809" stroke="#2e2226" stroke-width="2"/>
+<g class="gira" style="transform-origin: 58px 144px">
+  <circle cx="58" cy="144" r="12" fill="#070506" stroke="#9d9196" stroke-opacity=".45"/>
+  <circle cx="58" cy="144" r="9" fill="none" stroke="#2a2326"/><circle cx="58" cy="144" r="6.5" fill="none" stroke="#2a2326"/>
+  <circle cx="58" cy="144" r="3.8" fill="#8c1236"/><circle cx="58" cy="144" r="1" fill="#000"/>
+  <path d="M49 139 A10 10 0 0 1 55 134.5" stroke="#fff" stroke-opacity=".35" stroke-width="1.4" fill="none" stroke-linecap="round"/></g>
+<text x="86" y="139" font-size="9.5" font-weight="700" letter-spacing="3" fill="#bdbdca">OUVINDO</text>
+<text x="86" y="157" font-size="10.7" fill="#eee8ea">Brat and It's Completely Different but Also Still Brat</text>
+<rect x="424" y="120" width="388" height="48" rx="10" fill="#0b0809" stroke="#2e2226" stroke-width="2"/>
+<g transform="translate(454,144)">
+  <path d="M-8 -6 H8 A6 6 0 0 1 14 0 V3 A5 5 0 0 1 5 6 L3 4 H-3 L-5 6 A5 5 0 0 1 -14 3 V0 A6 6 0 0 1 -8 -6 Z" fill="#9d9196" fill-opacity=".85"/>
+  <path d="M-8 -3 V3 M-11 0 H-5" stroke="#0b0809" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="7" cy="-1.5" r="1.7" fill="#8c1236"/><circle cx="10" cy="1.5" r="1.7" fill="#e0446c"/></g>
+<text x="482" y="139" font-size="9.5" font-weight="700" letter-spacing="3" fill="#bdbdca">JOGANDO</text>
+<text x="482" y="157" font-size="14.5" fill="#eee8ea">Cult of the Lamb</text>
+</g>
+<rect x="1" y="1" width="838" height="194" rx="14" fill="none" stroke="#2e2226" stroke-width="2"/>
+<rect x="8" y="8" width="824" height="180" rx="9" fill="none" stroke="#bdbdca" stroke-opacity=".2"/>
+<g transform="translate(0,0) scale(1,1)">
+  <path d="M14 42 V21 Q14 14 21 14 H42" fill="none" stroke="#bdbdca" stroke-opacity=".75" stroke-width="1.4"/>
+  <path d="M19 31 V24 Q19 19 24 19 H31" fill="none" stroke="#bdbdca" stroke-opacity=".45" stroke-width="1"/>
+  <path d="M14 46 l2.2 3.2 l-2.2 3.2 l-2.2 -3.2 Z M46 14 l3.2 -2.2 l3.2 2.2 l-3.2 2.2 Z" fill="#bdbdca" fill-opacity=".8"/>
+</g>
+<g transform="translate(840,0) scale(-1,1)">
+  <path d="M14 42 V21 Q14 14 21 14 H42" fill="none" stroke="#bdbdca" stroke-opacity=".75" stroke-width="1.4"/>
+  <path d="M19 31 V24 Q19 19 24 19 H31" fill="none" stroke="#bdbdca" stroke-opacity=".45" stroke-width="1"/>
+  <path d="M14 46 l2.2 3.2 l-2.2 3.2 l-2.2 -3.2 Z M46 14 l3.2 -2.2 l3.2 2.2 l-3.2 2.2 Z" fill="#bdbdca" fill-opacity=".8"/>
+</g>
+<g transform="translate(0,196) scale(1,-1)">
+  <path d="M14 42 V21 Q14 14 21 14 H42" fill="none" stroke="#bdbdca" stroke-opacity=".75" stroke-width="1.4"/>
+  <path d="M19 31 V24 Q19 19 24 19 H31" fill="none" stroke="#bdbdca" stroke-opacity=".45" stroke-width="1"/>
+  <path d="M14 46 l2.2 3.2 l-2.2 3.2 l-2.2 -3.2 Z M46 14 l3.2 -2.2 l3.2 2.2 l-3.2 2.2 Z" fill="#bdbdca" fill-opacity=".8"/>
+</g>
+<g transform="translate(840,196) scale(-1,-1)">
+  <path d="M14 42 V21 Q14 14 21 14 H42" fill="none" stroke="#bdbdca" stroke-opacity=".75" stroke-width="1.4"/>
+  <path d="M19 31 V24 Q19 19 24 19 H31" fill="none" stroke="#bdbdca" stroke-opacity=".45" stroke-width="1"/>
+  <path d="M14 46 l2.2 3.2 l-2.2 3.2 l-2.2 -3.2 Z M46 14 l3.2 -2.2 l3.2 2.2 l-3.2 2.2 Z" fill="#bdbdca" fill-opacity=".8"/>
+</g>
+</svg>

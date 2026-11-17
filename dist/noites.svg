@@ -1,0 +1,490 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="302" viewBox="0 0 840 302" role="img">
+<defs>
+  <linearGradient id="fundo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#100c0e"/><stop offset="1" stop-color="#030203"/></linearGradient>
+  <radialGradient id="vinheta" cx=".5" cy=".45" r=".8"><stop offset=".5" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/></radialGradient>
+  <linearGradient id="sangue" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3a0717"/><stop offset=".45" stop-color="#e0446c"/><stop offset="1" stop-color="#3a0717" stop-opacity=".2"/></linearGradient>
+  <linearGradient id="sanguev" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8c1236"/><stop offset="1" stop-color="#e0446c"/></linearGradient>
+  <clipPath id="quadro"><rect x="2" y="2" width="836" height="298" rx="13"/></clipPath>
+</defs>
+<style>
+  text { font-family: 'Cinzel Decorative', Cinzel, 'Trajan Pro', 'Palatino Linotype', 'Book Antiqua', Palatino, Georgia, serif; }
+  .mono { font-family: Consolas, 'SFMono-Regular', 'DejaVu Sans Mono', monospace; }
+  @keyframes cintila { 0%,100% { opacity: .1 } 50% { opacity: .85 } }
+  @keyframes acende_NONE { 0% { fill: #120d0f; transform: scale(1) } 1% { fill: #1e1519; transform: scale(1.5) } 4% { fill: #1e1519; transform: scale(1) } 89% { fill: #1e1519 } 95%,100% { fill: #120d0f } }
+  .n_NONE { fill: #120d0f; transform-box: fill-box; transform-origin: 50% 100%; animation: acende_NONE 20s linear infinite backwards; }
+  @keyframes acende_FIRST_QUARTILE { 0% { fill: #120d0f; transform: scale(1) } 1% { fill: #3a0717; transform: scale(1.5) } 4% { fill: #3a0717; transform: scale(1) } 89% { fill: #3a0717 } 95%,100% { fill: #120d0f } }
+  .n_FIRST_QUARTILE { fill: #120d0f; transform-box: fill-box; transform-origin: 50% 100%; animation: acende_FIRST_QUARTILE 20s linear infinite backwards; }
+  @keyframes acende_SECOND_QUARTILE { 0% { fill: #120d0f; transform: scale(1) } 1% { fill: #6b0d2b; transform: scale(1.5) } 4% { fill: #6b0d2b; transform: scale(1) } 89% { fill: #6b0d2b } 95%,100% { fill: #120d0f } }
+  .n_SECOND_QUARTILE { fill: #120d0f; transform-box: fill-box; transform-origin: 50% 100%; animation: acende_SECOND_QUARTILE 20s linear infinite backwards; }
+  @keyframes acende_THIRD_QUARTILE { 0% { fill: #120d0f; transform: scale(1) } 1% { fill: #a3173f; transform: scale(1.5) } 4% { fill: #a3173f; transform: scale(1) } 89% { fill: #a3173f } 95%,100% { fill: #120d0f } }
+  .n_THIRD_QUARTILE { fill: #120d0f; transform-box: fill-box; transform-origin: 50% 100%; animation: acende_THIRD_QUARTILE 20s linear infinite backwards; }
+  @keyframes acende_FOURTH_QUARTILE { 0% { fill: #120d0f; transform: scale(1) } 1% { fill: #e0446c; transform: scale(1.5) } 4% { fill: #e0446c; transform: scale(1) } 89% { fill: #e0446c } 95%,100% { fill: #120d0f } }
+  .n_FOURTH_QUARTILE { fill: #120d0f; transform-box: fill-box; transform-origin: 50% 100%; animation: acende_FOURTH_QUARTILE 20s linear infinite backwards; }
+  @keyframes anda { 0% { transform: translateX(0) } 90% { transform: translateX(728px) } 100% { transform: translateX(728px) } }
+  @keyframes aparece { 0% { opacity: 0 } 2% { opacity: 1 } 89% { opacity: 1 } 93%,100% { opacity: 0 } }
+  .bando { animation: anda 20s linear infinite, aparece 20s linear infinite; }
+  @keyframes voa { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-4px) } }
+  .voa { animation: voa .44s ease-in-out infinite; }
+  @keyframes asa1 { 0% { opacity: 1 } 50% { opacity: 0 } }
+  @keyframes asa2 { 0% { opacity: 0 } 50% { opacity: 1 } }
+  .asa1 { animation: asa1 .44s step-end infinite; }
+  .asa2 { animation: asa2 .44s step-end infinite; opacity: 0; }
+  @keyframes gota { 0% { transform: translateY(0) scale(.6); opacity: 0 } 15% { opacity: 1 } 100% { transform: translateY(30px) scale(1); opacity: .2 } }
+  .gota { transform-box: fill-box; transform-origin: center; animation: gota .5s ease-in infinite; }
+  @keyframes nevoa { 0%,100% { transform: translateX(-50px) } 50% { transform: translateX(50px) } }
+  .nevoa { animation: nevoa 18s ease-in-out infinite; }
+  .lento { animation: cintila 5s ease-in-out infinite; opacity: .7; }
+</style>
+<rect x="1" y="1" width="838" height="300" rx="14" fill="url(#fundo)"/>
+<rect x="1" y="1" width="838" height="300" rx="14" fill="url(#vinheta)"/>
+<g clip-path="url(#quadro)">
+<defs>
+  <mask id="crescente"><rect x="0" y="0" width="840" height="302" fill="#000"/><circle cx="792" cy="46" r="17" fill="#fff"/><circle cx="799" cy="41" r="15" fill="#000"/></mask>
+  <radialGradient id="brilhoLua"><stop offset="0" stop-color="#8c1236" stop-opacity=".35"/><stop offset="1" stop-color="#8c1236" stop-opacity="0"/></radialGradient>
+  <filter id="borra" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="9"/></filter>
+</defs>
+<circle cx="361.1" cy="20.5" r="0.6" fill="#eee8ea" style="opacity:.1; animation: cintila 2.4s ease-in-out 0s infinite"/>
+<circle cx="575.2" cy="67.5" r="1" fill="#eee8ea" style="opacity:.1; animation: cintila 3.1s ease-in-out 0.4s infinite"/>
+<circle cx="115.7" cy="103.6" r="1.4" fill="#eee8ea" style="opacity:.1; animation: cintila 3.8s ease-in-out 0.8s infinite"/>
+<circle cx="723.5" cy="99.1" r="0.6" fill="#eee8ea" style="opacity:.1; animation: cintila 4.5s ease-in-out 1.2s infinite"/>
+<circle cx="68.3" cy="35.2" r="1" fill="#eee8ea" style="opacity:.1; animation: cintila 5.2s ease-in-out 1.6s infinite"/>
+<circle cx="744.1" cy="77.9" r="1.4" fill="#eee8ea" style="opacity:.1; animation: cintila 2.4s ease-in-out 2.1s infinite"/>
+<circle cx="416.8" cy="89.1" r="0.6" fill="#eee8ea" style="opacity:.1; animation: cintila 3.1s ease-in-out 2.5s infinite"/>
+<circle cx="358.3" cy="21.7" r="1" fill="#eee8ea" style="opacity:.1; animation: cintila 3.8s ease-in-out 2.9s infinite"/>
+<circle cx="127.2" cy="23.9" r="1.4" fill="#eee8ea" style="opacity:.1; animation: cintila 4.5s ease-in-out 3.3s infinite"/>
+<circle cx="353.9" cy="69.7" r="0.6" fill="#eee8ea" style="opacity:.1; animation: cintila 5.2s ease-in-out 3.7s infinite"/>
+<circle cx="797.4" cy="22.1" r="1" fill="#eee8ea" style="opacity:.1; animation: cintila 2.4s ease-in-out 4.1s infinite"/>
+<circle cx="252.3" cy="42.4" r="1.4" fill="#eee8ea" style="opacity:.1; animation: cintila 3.1s ease-in-out 4.5s infinite"/>
+<circle cx="131.8" cy="38" r="0.6" fill="#eee8ea" style="opacity:.1; animation: cintila 3.8s ease-in-out 4.9s infinite"/>
+<circle cx="196.7" cy="16.9" r="1" fill="#eee8ea" style="opacity:.1; animation: cintila 4.5s ease-in-out 5.3s infinite"/>
+<circle cx="670" cy="71.2" r="1.4" fill="#eee8ea" style="opacity:.1; animation: cintila 5.2s ease-in-out 5.7s infinite"/>
+<circle cx="401" cy="80.2" r="0.6" fill="#eee8ea" style="opacity:.1; animation: cintila 2.4s ease-in-out 6.1s infinite"/>
+<circle cx="264.6" cy="43.5" r="1" fill="#eee8ea" style="opacity:.1; animation: cintila 3.1s ease-in-out 6.6s infinite"/>
+<circle cx="497.6" cy="45.2" r="1.4" fill="#eee8ea" style="opacity:.1; animation: cintila 3.8s ease-in-out 7s infinite"/>
+<circle cx="586.1" cy="63" r="0.6" fill="#eee8ea" style="opacity:.1; animation: cintila 4.5s ease-in-out 7.4s infinite"/>
+<circle cx="519.2" cy="78.4" r="1" fill="#eee8ea" style="opacity:.1; animation: cintila 5.2s ease-in-out 7.8s infinite"/>
+<circle cx="340.6" cy="28.3" r="1.4" fill="#eee8ea" style="opacity:.1; animation: cintila 2.4s ease-in-out 8.2s infinite"/>
+<circle cx="266.1" cy="75.5" r="0.6" fill="#eee8ea" style="opacity:.1; animation: cintila 3.1s ease-in-out 8.6s infinite"/>
+<circle cx="790" cy="46" r="48" fill="url(#brilhoLua)"/><rect width="840" height="302" fill="#eee8ea" mask="url(#crescente)"/>
+<text class="lento" x="30" y="42" font-size="13" font-weight="700" letter-spacing="5" fill="#bdbdca">✠ JARDIM DAS NOITES</text>
+<text x="30" y="67" font-size="14.5" fill="#9d9196"><tspan fill="#eee8ea" font-weight="700">820 contribuições</tspan> no último ano · maior sequência: <tspan fill="#eee8ea" font-weight="700">11 noites</tspan></text>
+<text class="mono" x="50" y="165" text-anchor="end" font-size="10" fill="#9d9196" fill-opacity=".8">seg</text>
+<text class="mono" x="50" y="193" text-anchor="end" font-size="10" fill="#9d9196" fill-opacity=".8">qua</text>
+<text class="mono" x="50" y="221" text-anchor="end" font-size="10" fill="#9d9196" fill-opacity=".8">sex</text>
+<path class="n_FOURTH_QUARTILE" style="animation-delay:0.00s" d="M58 153 V146.5 A5.5 4.5 0 0 1 69 146.5 V153 Z"><title>2025-11-16: 8</title></path>
+<path class="n_NONE" style="animation-delay:0.00s" d="M58 167 V160.5 A5.5 4.5 0 0 1 69 160.5 V167 Z"><title>2025-11-17: 0</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:0.00s" d="M58 181 V174.5 A5.5 4.5 0 0 1 69 174.5 V181 Z"><title>2025-11-18: 3</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:0.00s" d="M58 195 V188.5 A5.5 4.5 0 0 1 69 188.5 V195 Z"><title>2025-11-19: 1</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:0.00s" d="M58 209 V202.5 A5.5 4.5 0 0 1 69 202.5 V209 Z"><title>2025-11-20: 3</title></path>
+<path class="n_NONE" style="animation-delay:0.00s" d="M58 223 V216.5 A5.5 4.5 0 0 1 69 216.5 V223 Z"><title>2025-11-21: 0</title></path>
+<path class="n_THIRD_QUARTILE" style="animation-delay:0.00s" d="M58 237 V230.5 A5.5 4.5 0 0 1 69 230.5 V237 Z"><title>2025-11-22: 5</title></path>
+<path class="n_FOURTH_QUARTILE" style="animation-delay:0.35s" d="M72 153 V146.5 A5.5 4.5 0 0 1 83 146.5 V153 Z"><title>2025-11-23: 9</title></path>
+<path class="n_NONE" style="animation-delay:0.35s" d="M72 167 V160.5 A5.5 4.5 0 0 1 83 160.5 V167 Z"><title>2025-11-24: 0</title></path>
+<path class="n_NONE" style="animation-delay:0.35s" d="M72 181 V174.5 A5.5 4.5 0 0 1 83 174.5 V181 Z"><title>2025-11-25: 0</title></path>
+<path class="n_NONE" style="animation-delay:0.35s" d="M72 195 V188.5 A5.5 4.5 0 0 1 83 188.5 V195 Z"><title>2025-11-26: 0</title></path>
+<path class="n_NONE" style="animation-delay:0.35s" d="M72 209 V202.5 A5.5 4.5 0 0 1 83 202.5 V209 Z"><title>2025-11-27: 0</title></path>
+<path class="n_THIRD_QUARTILE" style="animation-delay:0.35s" d="M72 223 V216.5 A5.5 4.5 0 0 1 83 216.5 V223 Z"><title>2025-11-28: 7</title></path>
+<path class="n_NONE" style="animation-delay:0.35s" d="M72 237 V230.5 A5.5 4.5 0 0 1 83 230.5 V237 Z"><title>2025-11-29: 0</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:0.69s" d="M86 153 V146.5 A5.5 4.5 0 0 1 97 146.5 V153 Z"><title>2025-11-30: 2</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:0.69s" d="M86 167 V160.5 A5.5 4.5 0 0 1 97 160.5 V167 Z"><title>2025-12-01: 4</title></path>
+<path class="n_FOURTH_QUARTILE" style="animation-delay:0.69s" d="M86 181 V174.5 A5.5 4.5 0 0 1 97 174.5 V181 Z"><title>2025-12-02: 12</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:0.69s" d="M86 195 V188.5 A5.5 4.5 0 0 1 97 188.5 V195 Z"><title>2025-12-03: 3</title></path>
+<path class="n_NONE" style="animation-delay:0.69s" d="M86 209 V202.5 A5.5 4.5 0 0 1 97 202.5 V209 Z"><title>2025-12-04: 0</title></path>
+<path class="n_NONE" style="animation-delay:0.69s" d="M86 223 V216.5 A5.5 4.5 0 0 1 97 216.5 V223 Z"><title>2025-12-05: 0</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:0.69s" d="M86 237 V230.5 A5.5 4.5 0 0 1 97 230.5 V237 Z"><title>2025-12-06: 1</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:1.04s" d="M100 153 V146.5 A5.5 4.5 0 0 1 111 146.5 V153 Z"><title>2025-12-07: 4</title></path>
+<path class="n_NONE" style="animation-delay:1.04s" d="M100 167 V160.5 A5.5 4.5 0 0 1 111 160.5 V167 Z"><title>2025-12-08: 0</title></path>
+<path class="n_NONE" style="animation-delay:1.04s" d="M100 181 V174.5 A5.5 4.5 0 0 1 111 174.5 V181 Z"><title>2025-12-09: 0</title></path>
+<path class="n_FOURTH_QUARTILE" style="animation-delay:1.04s" d="M100 195 V188.5 A5.5 4.5 0 0 1 111 188.5 V195 Z"><title>2025-12-10: 11</title></path>
+<path class="n_NONE" style="animation-delay:1.04s" d="M100 209 V202.5 A5.5 4.5 0 0 1 111 202.5 V209 Z"><title>2025-12-11: 0</title></path>
+<path class="n_NONE" style="animation-delay:1.04s" d="M100 223 V216.5 A5.5 4.5 0 0 1 111 216.5 V223 Z"><title>2025-12-12: 0</title></path>
+<path class="n_FOURTH_QUARTILE" style="animation-delay:1.04s" d="M100 237 V230.5 A5.5 4.5 0 0 1 111 230.5 V237 Z"><title>2025-12-13: 9</title></path>
+<path class="n_NONE" style="animation-delay:1.38s" d="M114 153 V146.5 A5.5 4.5 0 0 1 125 146.5 V153 Z"><title>2025-12-14: 0</title></path>
+<path class="n_NONE" style="animation-delay:1.38s" d="M114 167 V160.5 A5.5 4.5 0 0 1 125 160.5 V167 Z"><title>2025-12-15: 0</title></path>
+<path class="n_NONE" style="animation-delay:1.38s" d="M114 181 V174.5 A5.5 4.5 0 0 1 125 174.5 V181 Z"><title>2025-12-16: 0</title></path>
+<path class="n_NONE" style="animation-delay:1.38s" d="M114 195 V188.5 A5.5 4.5 0 0 1 125 188.5 V195 Z"><title>2025-12-17: 0</title></path>
+<path class="n_FOURTH_QUARTILE" style="animation-delay:1.38s" d="M114 209 V202.5 A5.5 4.5 0 0 1 125 202.5 V209 Z"><title>2025-12-18: 11</title></path>
+<path class="n_NONE" style="animation-delay:1.38s" d="M114 223 V216.5 A5.5 4.5 0 0 1 125 216.5 V223 Z"><title>2025-12-19: 0</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:1.38s" d="M114 237 V230.5 A5.5 4.5 0 0 1 125 230.5 V237 Z"><title>2025-12-20: 3</title></path>
+<path class="n_FOURTH_QUARTILE" style="animation-delay:1.73s" d="M128 153 V146.5 A5.5 4.5 0 0 1 139 146.5 V153 Z"><title>2025-12-21: 9</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:1.73s" d="M128 167 V160.5 A5.5 4.5 0 0 1 139 160.5 V167 Z"><title>2025-12-22: 1</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:1.73s" d="M128 181 V174.5 A5.5 4.5 0 0 1 139 174.5 V181 Z"><title>2025-12-23: 3</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:1.73s" d="M128 195 V188.5 A5.5 4.5 0 0 1 139 188.5 V195 Z"><title>2025-12-24: 1</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:1.73s" d="M128 209 V202.5 A5.5 4.5 0 0 1 139 202.5 V209 Z"><title>2025-12-25: 2</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:1.73s" d="M128 223 V216.5 A5.5 4.5 0 0 1 139 216.5 V223 Z"><title>2025-12-26: 2</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:1.73s" d="M128 237 V230.5 A5.5 4.5 0 0 1 139 230.5 V237 Z"><title>2025-12-27: 3</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:2.08s" d="M142 153 V146.5 A5.5 4.5 0 0 1 153 146.5 V153 Z"><title>2025-12-28: 1</title></path>
+<path class="n_NONE" style="animation-delay:2.08s" d="M142 167 V160.5 A5.5 4.5 0 0 1 153 160.5 V167 Z"><title>2025-12-29: 0</title></path>
+<path class="n_THIRD_QUARTILE" style="animation-delay:2.08s" d="M142 181 V174.5 A5.5 4.5 0 0 1 153 174.5 V181 Z"><title>2025-12-30: 7</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:2.08s" d="M142 195 V188.5 A5.5 4.5 0 0 1 153 188.5 V195 Z"><title>2025-12-31: 3</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:2.08s" d="M142 209 V202.5 A5.5 4.5 0 0 1 153 202.5 V209 Z"><title>2026-01-01: 1</title></path>
+<path class="n_NONE" style="animation-delay:2.08s" d="M142 223 V216.5 A5.5 4.5 0 0 1 153 216.5 V223 Z"><title>2026-01-02: 0</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:2.08s" d="M142 237 V230.5 A5.5 4.5 0 0 1 153 230.5 V237 Z"><title>2026-01-03: 3</title></path>
+<path class="n_NONE" style="animation-delay:2.42s" d="M156 153 V146.5 A5.5 4.5 0 0 1 167 146.5 V153 Z"><title>2026-01-04: 0</title></path>
+<path class="n_NONE" style="animation-delay:2.42s" d="M156 167 V160.5 A5.5 4.5 0 0 1 167 160.5 V167 Z"><title>2026-01-05: 0</title></path>
+<path class="n_THIRD_QUARTILE" style="animation-delay:2.42s" d="M156 181 V174.5 A5.5 4.5 0 0 1 167 174.5 V181 Z"><title>2026-01-06: 6</title></path>
+<path class="n_THIRD_QUARTILE" style="animation-delay:2.42s" d="M156 195 V188.5 A5.5 4.5 0 0 1 167 188.5 V195 Z"><title>2026-01-07: 5</title></path>
+<path class="n_NONE" style="animation-delay:2.42s" d="M156 209 V202.5 A5.5 4.5 0 0 1 167 202.5 V209 Z"><title>2026-01-08: 0</title></path>
+<path class="n_NONE" style="animation-delay:2.42s" d="M156 223 V216.5 A5.5 4.5 0 0 1 167 216.5 V223 Z"><title>2026-01-09: 0</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:2.42s" d="M156 237 V230.5 A5.5 4.5 0 0 1 167 230.5 V237 Z"><title>2026-01-10: 1</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:2.77s" d="M170 153 V146.5 A5.5 4.5 0 0 1 181 146.5 V153 Z"><title>2026-01-11: 3</title></path>
+<path class="n_FOURTH_QUARTILE" style="animation-delay:2.77s" d="M170 167 V160.5 A5.5 4.5 0 0 1 181 160.5 V167 Z"><title>2026-01-12: 10</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:2.77s" d="M170 181 V174.5 A5.5 4.5 0 0 1 181 174.5 V181 Z"><title>2026-01-13: 1</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:2.77s" d="M170 195 V188.5 A5.5 4.5 0 0 1 181 188.5 V195 Z"><title>2026-01-14: 1</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:2.77s" d="M170 209 V202.5 A5.5 4.5 0 0 1 181 202.5 V209 Z"><title>2026-01-15: 4</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:2.77s" d="M170 223 V216.5 A5.5 4.5 0 0 1 181 216.5 V223 Z"><title>2026-01-16: 2</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:2.77s" d="M170 237 V230.5 A5.5 4.5 0 0 1 181 230.5 V237 Z"><title>2026-01-17: 1</title></path>
+<path class="n_FOURTH_QUARTILE" style="animation-delay:3.12s" d="M184 153 V146.5 A5.5 4.5 0 0 1 195 146.5 V153 Z"><title>2026-01-18: 12</title></path>
+<path class="n_THIRD_QUARTILE" style="animation-delay:3.12s" d="M184 167 V160.5 A5.5 4.5 0 0 1 195 160.5 V167 Z"><title>2026-01-19: 7</title></path>
+<path class="n_NONE" style="animation-delay:3.12s" d="M184 181 V174.5 A5.5 4.5 0 0 1 195 174.5 V181 Z"><title>2026-01-20: 0</title></path>
+<path class="n_FOURTH_QUARTILE" style="animation-delay:3.12s" d="M184 195 V188.5 A5.5 4.5 0 0 1 195 188.5 V195 Z"><title>2026-01-21: 9</title></path>
+<path class="n_THIRD_QUARTILE" style="animation-delay:3.12s" d="M184 209 V202.5 A5.5 4.5 0 0 1 195 202.5 V209 Z"><title>2026-01-22: 7</title></path>
+<path class="n_FOURTH_QUARTILE" style="animation-delay:3.12s" d="M184 223 V216.5 A5.5 4.5 0 0 1 195 216.5 V223 Z"><title>2026-01-23: 9</title></path>
+<path class="n_THIRD_QUARTILE" style="animation-delay:3.12s" d="M184 237 V230.5 A5.5 4.5 0 0 1 195 230.5 V237 Z"><title>2026-01-24: 6</title></path>
+<path class="n_FOURTH_QUARTILE" style="animation-delay:3.46s" d="M198 153 V146.5 A5.5 4.5 0 0 1 209 146.5 V153 Z"><title>2026-01-25: 9</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:3.46s" d="M198 167 V160.5 A5.5 4.5 0 0 1 209 160.5 V167 Z"><title>2026-01-26: 1</title></path>
+<path class="n_NONE" style="animation-delay:3.46s" d="M198 181 V174.5 A5.5 4.5 0 0 1 209 174.5 V181 Z"><title>2026-01-27: 0</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:3.46s" d="M198 195 V188.5 A5.5 4.5 0 0 1 209 188.5 V195 Z"><title>2026-01-28: 4</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:3.46s" d="M198 209 V202.5 A5.5 4.5 0 0 1 209 202.5 V209 Z"><title>2026-01-29: 1</title></path>
+<path class="n_NONE" style="animation-delay:3.46s" d="M198 223 V216.5 A5.5 4.5 0 0 1 209 216.5 V223 Z"><title>2026-01-30: 0</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:3.46s" d="M198 237 V230.5 A5.5 4.5 0 0 1 209 230.5 V237 Z"><title>2026-01-31: 4</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:3.81s" d="M212 153 V146.5 A5.5 4.5 0 0 1 223 146.5 V153 Z"><title>2026-02-01: 3</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:3.81s" d="M212 167 V160.5 A5.5 4.5 0 0 1 223 160.5 V167 Z"><title>2026-02-02: 1</title></path>
+<path class="n_THIRD_QUARTILE" style="animation-delay:3.81s" d="M212 181 V174.5 A5.5 4.5 0 0 1 223 174.5 V181 Z"><title>2026-02-03: 6</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:3.81s" d="M212 195 V188.5 A5.5 4.5 0 0 1 223 188.5 V195 Z"><title>2026-02-04: 4</title></path>
+<path class="n_NONE" style="animation-delay:3.81s" d="M212 209 V202.5 A5.5 4.5 0 0 1 223 202.5 V209 Z"><title>2026-02-05: 0</title></path>
+<path class="n_NONE" style="animation-delay:3.81s" d="M212 223 V216.5 A5.5 4.5 0 0 1 223 216.5 V223 Z"><title>2026-02-06: 0</title></path>
+<path class="n_FOURTH_QUARTILE" style="animation-delay:3.81s" d="M212 237 V230.5 A5.5 4.5 0 0 1 223 230.5 V237 Z"><title>2026-02-07: 8</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:4.15s" d="M226 153 V146.5 A5.5 4.5 0 0 1 237 146.5 V153 Z"><title>2026-02-08: 2</title></path>
+<path class="n_NONE" style="animation-delay:4.15s" d="M226 167 V160.5 A5.5 4.5 0 0 1 237 160.5 V167 Z"><title>2026-02-09: 0</title></path>
+<path class="n_FOURTH_QUARTILE" style="animation-delay:4.15s" d="M226 181 V174.5 A5.5 4.5 0 0 1 237 174.5 V181 Z"><title>2026-02-10: 11</title></path>
+<path class="n_NONE" style="animation-delay:4.15s" d="M226 195 V188.5 A5.5 4.5 0 0 1 237 188.5 V195 Z"><title>2026-02-11: 0</title></path>
+<path class="n_THIRD_QUARTILE" style="animation-delay:4.15s" d="M226 209 V202.5 A5.5 4.5 0 0 1 237 202.5 V209 Z"><title>2026-02-12: 7</title></path>
+<path class="n_NONE" style="animation-delay:4.15s" d="M226 223 V216.5 A5.5 4.5 0 0 1 237 216.5 V223 Z"><title>2026-02-13: 0</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:4.15s" d="M226 237 V230.5 A5.5 4.5 0 0 1 237 230.5 V237 Z"><title>2026-02-14: 1</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:4.50s" d="M240 153 V146.5 A5.5 4.5 0 0 1 251 146.5 V153 Z"><title>2026-02-15: 3</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:4.50s" d="M240 167 V160.5 A5.5 4.5 0 0 1 251 160.5 V167 Z"><title>2026-02-16: 1</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:4.50s" d="M240 181 V174.5 A5.5 4.5 0 0 1 251 174.5 V181 Z"><title>2026-02-17: 2</title></path>
+<path class="n_NONE" style="animation-delay:4.50s" d="M240 195 V188.5 A5.5 4.5 0 0 1 251 188.5 V195 Z"><title>2026-02-18: 0</title></path>
+<path class="n_NONE" style="animation-delay:4.50s" d="M240 209 V202.5 A5.5 4.5 0 0 1 251 202.5 V209 Z"><title>2026-02-19: 0</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:4.50s" d="M240 223 V216.5 A5.5 4.5 0 0 1 251 216.5 V223 Z"><title>2026-02-20: 1</title></path>
+<path class="n_NONE" style="animation-delay:4.50s" d="M240 237 V230.5 A5.5 4.5 0 0 1 251 230.5 V237 Z"><title>2026-02-21: 0</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:4.85s" d="M254 153 V146.5 A5.5 4.5 0 0 1 265 146.5 V153 Z"><title>2026-02-22: 3</title></path>
+<path class="n_NONE" style="animation-delay:4.85s" d="M254 167 V160.5 A5.5 4.5 0 0 1 265 160.5 V167 Z"><title>2026-02-23: 0</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:4.85s" d="M254 181 V174.5 A5.5 4.5 0 0 1 265 174.5 V181 Z"><title>2026-02-24: 3</title></path>
+<path class="n_NONE" style="animation-delay:4.85s" d="M254 195 V188.5 A5.5 4.5 0 0 1 265 188.5 V195 Z"><title>2026-02-25: 0</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:4.85s" d="M254 209 V202.5 A5.5 4.5 0 0 1 265 202.5 V209 Z"><title>2026-02-26: 1</title></path>
+<path class="n_NONE" style="animation-delay:4.85s" d="M254 223 V216.5 A5.5 4.5 0 0 1 265 216.5 V223 Z"><title>2026-02-27: 0</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:4.85s" d="M254 237 V230.5 A5.5 4.5 0 0 1 265 230.5 V237 Z"><title>2026-02-28: 3</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:5.19s" d="M268 153 V146.5 A5.5 4.5 0 0 1 279 146.5 V153 Z"><title>2026-03-01: 1</title></path>
+<path class="n_NONE" style="animation-delay:5.19s" d="M268 167 V160.5 A5.5 4.5 0 0 1 279 160.5 V167 Z"><title>2026-03-02: 0</title></path>
+<path class="n_NONE" style="animation-delay:5.19s" d="M268 181 V174.5 A5.5 4.5 0 0 1 279 174.5 V181 Z"><title>2026-03-03: 0</title></path>
+<path class="n_THIRD_QUARTILE" style="animation-delay:5.19s" d="M268 195 V188.5 A5.5 4.5 0 0 1 279 188.5 V195 Z"><title>2026-03-04: 6</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:5.19s" d="M268 209 V202.5 A5.5 4.5 0 0 1 279 202.5 V209 Z"><title>2026-03-05: 2</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:5.19s" d="M268 223 V216.5 A5.5 4.5 0 0 1 279 216.5 V223 Z"><title>2026-03-06: 1</title></path>
+<path class="n_NONE" style="animation-delay:5.19s" d="M268 237 V230.5 A5.5 4.5 0 0 1 279 230.5 V237 Z"><title>2026-03-07: 0</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:5.54s" d="M282 153 V146.5 A5.5 4.5 0 0 1 293 146.5 V153 Z"><title>2026-03-08: 4</title></path>
+<path class="n_THIRD_QUARTILE" style="animation-delay:5.54s" d="M282 167 V160.5 A5.5 4.5 0 0 1 293 160.5 V167 Z"><title>2026-03-09: 7</title></path>
+<path class="n_NONE" style="animation-delay:5.54s" d="M282 181 V174.5 A5.5 4.5 0 0 1 293 174.5 V181 Z"><title>2026-03-10: 0</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:5.54s" d="M282 195 V188.5 A5.5 4.5 0 0 1 293 188.5 V195 Z"><title>2026-03-11: 2</title></path>
+<path class="n_FOURTH_QUARTILE" style="animation-delay:5.54s" d="M282 209 V202.5 A5.5 4.5 0 0 1 293 202.5 V209 Z"><title>2026-03-12: 10</title></path>
+<path class="n_NONE" style="animation-delay:5.54s" d="M282 223 V216.5 A5.5 4.5 0 0 1 293 216.5 V223 Z"><title>2026-03-13: 0</title></path>
+<path class="n_NONE" style="animation-delay:5.54s" d="M282 237 V230.5 A5.5 4.5 0 0 1 293 230.5 V237 Z"><title>2026-03-14: 0</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:5.88s" d="M296 153 V146.5 A5.5 4.5 0 0 1 307 146.5 V153 Z"><title>2026-03-15: 1</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:5.88s" d="M296 167 V160.5 A5.5 4.5 0 0 1 307 160.5 V167 Z"><title>2026-03-16: 1</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:5.88s" d="M296 181 V174.5 A5.5 4.5 0 0 1 307 174.5 V181 Z"><title>2026-03-17: 3</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:5.88s" d="M296 195 V188.5 A5.5 4.5 0 0 1 307 188.5 V195 Z"><title>2026-03-18: 3</title></path>
+<path class="n_NONE" style="animation-delay:5.88s" d="M296 209 V202.5 A5.5 4.5 0 0 1 307 202.5 V209 Z"><title>2026-03-19: 0</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:5.88s" d="M296 223 V216.5 A5.5 4.5 0 0 1 307 216.5 V223 Z"><title>2026-03-20: 1</title></path>
+<path class="n_NONE" style="animation-delay:5.88s" d="M296 237 V230.5 A5.5 4.5 0 0 1 307 230.5 V237 Z"><title>2026-03-21: 0</title></path>
+<path class="n_NONE" style="animation-delay:6.23s" d="M310 153 V146.5 A5.5 4.5 0 0 1 321 146.5 V153 Z"><title>2026-03-22: 0</title></path>
+<path class="n_THIRD_QUARTILE" style="animation-delay:6.23s" d="M310 167 V160.5 A5.5 4.5 0 0 1 321 160.5 V167 Z"><title>2026-03-23: 7</title></path>
+<path class="n_NONE" style="animation-delay:6.23s" d="M310 181 V174.5 A5.5 4.5 0 0 1 321 174.5 V181 Z"><title>2026-03-24: 0</title></path>
+<path class="n_NONE" style="animation-delay:6.23s" d="M310 195 V188.5 A5.5 4.5 0 0 1 321 188.5 V195 Z"><title>2026-03-25: 0</title></path>
+<path class="n_NONE" style="animation-delay:6.23s" d="M310 209 V202.5 A5.5 4.5 0 0 1 321 202.5 V209 Z"><title>2026-03-26: 0</title></path>
+<path class="n_NONE" style="animation-delay:6.23s" d="M310 223 V216.5 A5.5 4.5 0 0 1 321 216.5 V223 Z"><title>2026-03-27: 0</title></path>
+<path class="n_NONE" style="animation-delay:6.23s" d="M310 237 V230.5 A5.5 4.5 0 0 1 321 230.5 V237 Z"><title>2026-03-28: 0</title></path>
+<path class="n_NONE" style="animation-delay:6.58s" d="M324 153 V146.5 A5.5 4.5 0 0 1 335 146.5 V153 Z"><title>2026-03-29: 0</title></path>
+<path class="n_NONE" style="animation-delay:6.58s" d="M324 167 V160.5 A5.5 4.5 0 0 1 335 160.5 V167 Z"><title>2026-03-30: 0</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:6.58s" d="M324 181 V174.5 A5.5 4.5 0 0 1 335 174.5 V181 Z"><title>2026-03-31: 3</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:6.58s" d="M324 195 V188.5 A5.5 4.5 0 0 1 335 188.5 V195 Z"><title>2026-04-01: 1</title></path>
+<path class="n_NONE" style="animation-delay:6.58s" d="M324 209 V202.5 A5.5 4.5 0 0 1 335 202.5 V209 Z"><title>2026-04-02: 0</title></path>
+<path class="n_NONE" style="animation-delay:6.58s" d="M324 223 V216.5 A5.5 4.5 0 0 1 335 216.5 V223 Z"><title>2026-04-03: 0</title></path>
+<path class="n_FOURTH_QUARTILE" style="animation-delay:6.58s" d="M324 237 V230.5 A5.5 4.5 0 0 1 335 230.5 V237 Z"><title>2026-04-04: 11</title></path>
+<path class="n_NONE" style="animation-delay:6.92s" d="M338 153 V146.5 A5.5 4.5 0 0 1 349 146.5 V153 Z"><title>2026-04-05: 0</title></path>
+<path class="n_NONE" style="animation-delay:6.92s" d="M338 167 V160.5 A5.5 4.5 0 0 1 349 160.5 V167 Z"><title>2026-04-06: 0</title></path>
+<path class="n_THIRD_QUARTILE" style="animation-delay:6.92s" d="M338 181 V174.5 A5.5 4.5 0 0 1 349 174.5 V181 Z"><title>2026-04-07: 6</title></path>
+<path class="n_NONE" style="animation-delay:6.92s" d="M338 195 V188.5 A5.5 4.5 0 0 1 349 188.5 V195 Z"><title>2026-04-08: 0</title></path>
+<path class="n_NONE" style="animation-delay:6.92s" d="M338 209 V202.5 A5.5 4.5 0 0 1 349 202.5 V209 Z"><title>2026-04-09: 0</title></path>
+<path class="n_THIRD_QUARTILE" style="animation-delay:6.92s" d="M338 223 V216.5 A5.5 4.5 0 0 1 349 216.5 V223 Z"><title>2026-04-10: 7</title></path>
+<path class="n_NONE" style="animation-delay:6.92s" d="M338 237 V230.5 A5.5 4.5 0 0 1 349 230.5 V237 Z"><title>2026-04-11: 0</title></path>
+<path class="n_THIRD_QUARTILE" style="animation-delay:7.27s" d="M352 153 V146.5 A5.5 4.5 0 0 1 363 146.5 V153 Z"><title>2026-04-12: 7</title></path>
+<path class="n_NONE" style="animation-delay:7.27s" d="M352 167 V160.5 A5.5 4.5 0 0 1 363 160.5 V167 Z"><title>2026-04-13: 0</title></path>
+<path class="n_NONE" style="animation-delay:7.27s" d="M352 181 V174.5 A5.5 4.5 0 0 1 363 174.5 V181 Z"><title>2026-04-14: 0</title></path>
+<path class="n_NONE" style="animation-delay:7.27s" d="M352 195 V188.5 A5.5 4.5 0 0 1 363 188.5 V195 Z"><title>2026-04-15: 0</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:7.27s" d="M352 209 V202.5 A5.5 4.5 0 0 1 363 202.5 V209 Z"><title>2026-04-16: 1</title></path>
+<path class="n_NONE" style="animation-delay:7.27s" d="M352 223 V216.5 A5.5 4.5 0 0 1 363 216.5 V223 Z"><title>2026-04-17: 0</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:7.27s" d="M352 237 V230.5 A5.5 4.5 0 0 1 363 230.5 V237 Z"><title>2026-04-18: 1</title></path>
+<path class="n_NONE" style="animation-delay:7.62s" d="M366 153 V146.5 A5.5 4.5 0 0 1 377 146.5 V153 Z"><title>2026-04-19: 0</title></path>
+<path class="n_NONE" style="animation-delay:7.62s" d="M366 167 V160.5 A5.5 4.5 0 0 1 377 160.5 V167 Z"><title>2026-04-20: 0</title></path>
+<path class="n_NONE" style="animation-delay:7.62s" d="M366 181 V174.5 A5.5 4.5 0 0 1 377 174.5 V181 Z"><title>2026-04-21: 0</title></path>
+<path class="n_NONE" style="animation-delay:7.62s" d="M366 195 V188.5 A5.5 4.5 0 0 1 377 188.5 V195 Z"><title>2026-04-22: 0</title></path>
+<path class="n_NONE" style="animation-delay:7.62s" d="M366 209 V202.5 A5.5 4.5 0 0 1 377 202.5 V209 Z"><title>2026-04-23: 0</title></path>
+<path class="n_NONE" style="animation-delay:7.62s" d="M366 223 V216.5 A5.5 4.5 0 0 1 377 216.5 V223 Z"><title>2026-04-24: 0</title></path>
+<path class="n_NONE" style="animation-delay:7.62s" d="M366 237 V230.5 A5.5 4.5 0 0 1 377 230.5 V237 Z"><title>2026-04-25: 0</title></path>
+<path class="n_NONE" style="animation-delay:7.96s" d="M380 153 V146.5 A5.5 4.5 0 0 1 391 146.5 V153 Z"><title>2026-04-26: 0</title></path>
+<path class="n_NONE" style="animation-delay:7.96s" d="M380 167 V160.5 A5.5 4.5 0 0 1 391 160.5 V167 Z"><title>2026-04-27: 0</title></path>
+<path class="n_NONE" style="animation-delay:7.96s" d="M380 181 V174.5 A5.5 4.5 0 0 1 391 174.5 V181 Z"><title>2026-04-28: 0</title></path>
+<path class="n_NONE" style="animation-delay:7.96s" d="M380 195 V188.5 A5.5 4.5 0 0 1 391 188.5 V195 Z"><title>2026-04-29: 0</title></path>
+<path class="n_NONE" style="animation-delay:7.96s" d="M380 209 V202.5 A5.5 4.5 0 0 1 391 202.5 V209 Z"><title>2026-04-30: 0</title></path>
+<path class="n_NONE" style="animation-delay:7.96s" d="M380 223 V216.5 A5.5 4.5 0 0 1 391 216.5 V223 Z"><title>2026-05-01: 0</title></path>
+<path class="n_NONE" style="animation-delay:7.96s" d="M380 237 V230.5 A5.5 4.5 0 0 1 391 230.5 V237 Z"><title>2026-05-02: 0</title></path>
+<path class="n_NONE" style="animation-delay:8.31s" d="M394 153 V146.5 A5.5 4.5 0 0 1 405 146.5 V153 Z"><title>2026-05-03: 0</title></path>
+<path class="n_NONE" style="animation-delay:8.31s" d="M394 167 V160.5 A5.5 4.5 0 0 1 405 160.5 V167 Z"><title>2026-05-04: 0</title></path>
+<path class="n_NONE" style="animation-delay:8.31s" d="M394 181 V174.5 A5.5 4.5 0 0 1 405 174.5 V181 Z"><title>2026-05-05: 0</title></path>
+<path class="n_NONE" style="animation-delay:8.31s" d="M394 195 V188.5 A5.5 4.5 0 0 1 405 188.5 V195 Z"><title>2026-05-06: 0</title></path>
+<path class="n_NONE" style="animation-delay:8.31s" d="M394 209 V202.5 A5.5 4.5 0 0 1 405 202.5 V209 Z"><title>2026-05-07: 0</title></path>
+<path class="n_NONE" style="animation-delay:8.31s" d="M394 223 V216.5 A5.5 4.5 0 0 1 405 216.5 V223 Z"><title>2026-05-08: 0</title></path>
+<path class="n_NONE" style="animation-delay:8.31s" d="M394 237 V230.5 A5.5 4.5 0 0 1 405 230.5 V237 Z"><title>2026-05-09: 0</title></path>
+<path class="n_NONE" style="animation-delay:8.65s" d="M408 153 V146.5 A5.5 4.5 0 0 1 419 146.5 V153 Z"><title>2026-05-10: 0</title></path>
+<path class="n_FOURTH_QUARTILE" style="animation-delay:8.65s" d="M408 167 V160.5 A5.5 4.5 0 0 1 419 160.5 V167 Z"><title>2026-05-11: 8</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:8.65s" d="M408 181 V174.5 A5.5 4.5 0 0 1 419 174.5 V181 Z"><title>2026-05-12: 1</title></path>
+<path class="n_FOURTH_QUARTILE" style="animation-delay:8.65s" d="M408 195 V188.5 A5.5 4.5 0 0 1 419 188.5 V195 Z"><title>2026-05-13: 8</title></path>
+<path class="n_NONE" style="animation-delay:8.65s" d="M408 209 V202.5 A5.5 4.5 0 0 1 419 202.5 V209 Z"><title>2026-05-14: 0</title></path>
+<path class="n_FOURTH_QUARTILE" style="animation-delay:8.65s" d="M408 223 V216.5 A5.5 4.5 0 0 1 419 216.5 V223 Z"><title>2026-05-15: 10</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:8.65s" d="M408 237 V230.5 A5.5 4.5 0 0 1 419 230.5 V237 Z"><title>2026-05-16: 2</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:9.00s" d="M422 153 V146.5 A5.5 4.5 0 0 1 433 146.5 V153 Z"><title>2026-05-17: 1</title></path>
+<path class="n_NONE" style="animation-delay:9.00s" d="M422 167 V160.5 A5.5 4.5 0 0 1 433 160.5 V167 Z"><title>2026-05-18: 0</title></path>
+<path class="n_NONE" style="animation-delay:9.00s" d="M422 181 V174.5 A5.5 4.5 0 0 1 433 174.5 V181 Z"><title>2026-05-19: 0</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:9.00s" d="M422 195 V188.5 A5.5 4.5 0 0 1 433 188.5 V195 Z"><title>2026-05-20: 4</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:9.00s" d="M422 209 V202.5 A5.5 4.5 0 0 1 433 202.5 V209 Z"><title>2026-05-21: 1</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:9.00s" d="M422 223 V216.5 A5.5 4.5 0 0 1 433 216.5 V223 Z"><title>2026-05-22: 1</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:9.00s" d="M422 237 V230.5 A5.5 4.5 0 0 1 433 230.5 V237 Z"><title>2026-05-23: 3</title></path>
+<path class="n_NONE" style="animation-delay:9.35s" d="M436 153 V146.5 A5.5 4.5 0 0 1 447 146.5 V153 Z"><title>2026-05-24: 0</title></path>
+<path class="n_NONE" style="animation-delay:9.35s" d="M436 167 V160.5 A5.5 4.5 0 0 1 447 160.5 V167 Z"><title>2026-05-25: 0</title></path>
+<path class="n_NONE" style="animation-delay:9.35s" d="M436 181 V174.5 A5.5 4.5 0 0 1 447 174.5 V181 Z"><title>2026-05-26: 0</title></path>
+<path class="n_NONE" style="animation-delay:9.35s" d="M436 195 V188.5 A5.5 4.5 0 0 1 447 188.5 V195 Z"><title>2026-05-27: 0</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:9.35s" d="M436 209 V202.5 A5.5 4.5 0 0 1 447 202.5 V209 Z"><title>2026-05-28: 1</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:9.35s" d="M436 223 V216.5 A5.5 4.5 0 0 1 447 216.5 V223 Z"><title>2026-05-29: 2</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:9.35s" d="M436 237 V230.5 A5.5 4.5 0 0 1 447 230.5 V237 Z"><title>2026-05-30: 3</title></path>
+<path class="n_FOURTH_QUARTILE" style="animation-delay:9.69s" d="M450 153 V146.5 A5.5 4.5 0 0 1 461 146.5 V153 Z"><title>2026-05-31: 8</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:9.69s" d="M450 167 V160.5 A5.5 4.5 0 0 1 461 160.5 V167 Z"><title>2026-06-01: 1</title></path>
+<path class="n_FOURTH_QUARTILE" style="animation-delay:9.69s" d="M450 181 V174.5 A5.5 4.5 0 0 1 461 174.5 V181 Z"><title>2026-06-02: 11</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:9.69s" d="M450 195 V188.5 A5.5 4.5 0 0 1 461 188.5 V195 Z"><title>2026-06-03: 1</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:9.69s" d="M450 209 V202.5 A5.5 4.5 0 0 1 461 202.5 V209 Z"><title>2026-06-04: 2</title></path>
+<path class="n_THIRD_QUARTILE" style="animation-delay:9.69s" d="M450 223 V216.5 A5.5 4.5 0 0 1 461 216.5 V223 Z"><title>2026-06-05: 5</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:9.69s" d="M450 237 V230.5 A5.5 4.5 0 0 1 461 230.5 V237 Z"><title>2026-06-06: 1</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:10.04s" d="M464 153 V146.5 A5.5 4.5 0 0 1 475 146.5 V153 Z"><title>2026-06-07: 4</title></path>
+<path class="n_NONE" style="animation-delay:10.04s" d="M464 167 V160.5 A5.5 4.5 0 0 1 475 160.5 V167 Z"><title>2026-06-08: 0</title></path>
+<path class="n_FOURTH_QUARTILE" style="animation-delay:10.04s" d="M464 181 V174.5 A5.5 4.5 0 0 1 475 174.5 V181 Z"><title>2026-06-09: 10</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:10.04s" d="M464 195 V188.5 A5.5 4.5 0 0 1 475 188.5 V195 Z"><title>2026-06-10: 3</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:10.04s" d="M464 209 V202.5 A5.5 4.5 0 0 1 475 202.5 V209 Z"><title>2026-06-11: 4</title></path>
+<path class="n_THIRD_QUARTILE" style="animation-delay:10.04s" d="M464 223 V216.5 A5.5 4.5 0 0 1 475 216.5 V223 Z"><title>2026-06-12: 6</title></path>
+<path class="n_THIRD_QUARTILE" style="animation-delay:10.04s" d="M464 237 V230.5 A5.5 4.5 0 0 1 475 230.5 V237 Z"><title>2026-06-13: 5</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:10.38s" d="M478 153 V146.5 A5.5 4.5 0 0 1 489 146.5 V153 Z"><title>2026-06-14: 2</title></path>
+<path class="n_FOURTH_QUARTILE" style="animation-delay:10.38s" d="M478 167 V160.5 A5.5 4.5 0 0 1 489 160.5 V167 Z"><title>2026-06-15: 8</title></path>
+<path class="n_FOURTH_QUARTILE" style="animation-delay:10.38s" d="M478 181 V174.5 A5.5 4.5 0 0 1 489 174.5 V181 Z"><title>2026-06-16: 10</title></path>
+<path class="n_THIRD_QUARTILE" style="animation-delay:10.38s" d="M478 195 V188.5 A5.5 4.5 0 0 1 489 188.5 V195 Z"><title>2026-06-17: 6</title></path>
+<path class="n_NONE" style="animation-delay:10.38s" d="M478 209 V202.5 A5.5 4.5 0 0 1 489 202.5 V209 Z"><title>2026-06-18: 0</title></path>
+<path class="n_THIRD_QUARTILE" style="animation-delay:10.38s" d="M478 223 V216.5 A5.5 4.5 0 0 1 489 216.5 V223 Z"><title>2026-06-19: 5</title></path>
+<path class="n_NONE" style="animation-delay:10.38s" d="M478 237 V230.5 A5.5 4.5 0 0 1 489 230.5 V237 Z"><title>2026-06-20: 0</title></path>
+<path class="n_THIRD_QUARTILE" style="animation-delay:10.73s" d="M492 153 V146.5 A5.5 4.5 0 0 1 503 146.5 V153 Z"><title>2026-06-21: 7</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:10.73s" d="M492 167 V160.5 A5.5 4.5 0 0 1 503 160.5 V167 Z"><title>2026-06-22: 1</title></path>
+<path class="n_NONE" style="animation-delay:10.73s" d="M492 181 V174.5 A5.5 4.5 0 0 1 503 174.5 V181 Z"><title>2026-06-23: 0</title></path>
+<path class="n_FOURTH_QUARTILE" style="animation-delay:10.73s" d="M492 195 V188.5 A5.5 4.5 0 0 1 503 188.5 V195 Z"><title>2026-06-24: 9</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:10.73s" d="M492 209 V202.5 A5.5 4.5 0 0 1 503 202.5 V209 Z"><title>2026-06-25: 1</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:10.73s" d="M492 223 V216.5 A5.5 4.5 0 0 1 503 216.5 V223 Z"><title>2026-06-26: 3</title></path>
+<path class="n_NONE" style="animation-delay:10.73s" d="M492 237 V230.5 A5.5 4.5 0 0 1 503 230.5 V237 Z"><title>2026-06-27: 0</title></path>
+<path class="n_NONE" style="animation-delay:11.08s" d="M506 153 V146.5 A5.5 4.5 0 0 1 517 146.5 V153 Z"><title>2026-06-28: 0</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:11.08s" d="M506 167 V160.5 A5.5 4.5 0 0 1 517 160.5 V167 Z"><title>2026-06-29: 3</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:11.08s" d="M506 181 V174.5 A5.5 4.5 0 0 1 517 174.5 V181 Z"><title>2026-06-30: 1</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:11.08s" d="M506 195 V188.5 A5.5 4.5 0 0 1 517 188.5 V195 Z"><title>2026-07-01: 1</title></path>
+<path class="n_NONE" style="animation-delay:11.08s" d="M506 209 V202.5 A5.5 4.5 0 0 1 517 202.5 V209 Z"><title>2026-07-02: 0</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:11.08s" d="M506 223 V216.5 A5.5 4.5 0 0 1 517 216.5 V223 Z"><title>2026-07-03: 1</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:11.08s" d="M506 237 V230.5 A5.5 4.5 0 0 1 517 230.5 V237 Z"><title>2026-07-04: 2</title></path>
+<path class="n_NONE" style="animation-delay:11.42s" d="M520 153 V146.5 A5.5 4.5 0 0 1 531 146.5 V153 Z"><title>2026-07-05: 0</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:11.42s" d="M520 167 V160.5 A5.5 4.5 0 0 1 531 160.5 V167 Z"><title>2026-07-06: 3</title></path>
+<path class="n_NONE" style="animation-delay:11.42s" d="M520 181 V174.5 A5.5 4.5 0 0 1 531 174.5 V181 Z"><title>2026-07-07: 0</title></path>
+<path class="n_THIRD_QUARTILE" style="animation-delay:11.42s" d="M520 195 V188.5 A5.5 4.5 0 0 1 531 188.5 V195 Z"><title>2026-07-08: 7</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:11.42s" d="M520 209 V202.5 A5.5 4.5 0 0 1 531 202.5 V209 Z"><title>2026-07-09: 3</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:11.42s" d="M520 223 V216.5 A5.5 4.5 0 0 1 531 216.5 V223 Z"><title>2026-07-10: 3</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:11.42s" d="M520 237 V230.5 A5.5 4.5 0 0 1 531 230.5 V237 Z"><title>2026-07-11: 2</title></path>
+<path class="n_NONE" style="animation-delay:11.77s" d="M534 153 V146.5 A5.5 4.5 0 0 1 545 146.5 V153 Z"><title>2026-07-12: 0</title></path>
+<path class="n_THIRD_QUARTILE" style="animation-delay:11.77s" d="M534 167 V160.5 A5.5 4.5 0 0 1 545 160.5 V167 Z"><title>2026-07-13: 5</title></path>
+<path class="n_FOURTH_QUARTILE" style="animation-delay:11.77s" d="M534 181 V174.5 A5.5 4.5 0 0 1 545 174.5 V181 Z"><title>2026-07-14: 10</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:11.77s" d="M534 195 V188.5 A5.5 4.5 0 0 1 545 188.5 V195 Z"><title>2026-07-15: 3</title></path>
+<path class="n_NONE" style="animation-delay:11.77s" d="M534 209 V202.5 A5.5 4.5 0 0 1 545 202.5 V209 Z"><title>2026-07-16: 0</title></path>
+<path class="n_FOURTH_QUARTILE" style="animation-delay:11.77s" d="M534 223 V216.5 A5.5 4.5 0 0 1 545 216.5 V223 Z"><title>2026-07-17: 8</title></path>
+<path class="n_THIRD_QUARTILE" style="animation-delay:11.77s" d="M534 237 V230.5 A5.5 4.5 0 0 1 545 230.5 V237 Z"><title>2026-07-18: 6</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:12.12s" d="M548 153 V146.5 A5.5 4.5 0 0 1 559 146.5 V153 Z"><title>2026-07-19: 1</title></path>
+<path class="n_FOURTH_QUARTILE" style="animation-delay:12.12s" d="M548 167 V160.5 A5.5 4.5 0 0 1 559 160.5 V167 Z"><title>2026-07-20: 9</title></path>
+<path class="n_NONE" style="animation-delay:12.12s" d="M548 181 V174.5 A5.5 4.5 0 0 1 559 174.5 V181 Z"><title>2026-07-21: 0</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:12.12s" d="M548 195 V188.5 A5.5 4.5 0 0 1 559 188.5 V195 Z"><title>2026-07-22: 3</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:12.12s" d="M548 209 V202.5 A5.5 4.5 0 0 1 559 202.5 V209 Z"><title>2026-07-23: 3</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:12.12s" d="M548 223 V216.5 A5.5 4.5 0 0 1 559 216.5 V223 Z"><title>2026-07-24: 1</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:12.12s" d="M548 237 V230.5 A5.5 4.5 0 0 1 559 230.5 V237 Z"><title>2026-07-25: 1</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:12.46s" d="M562 153 V146.5 A5.5 4.5 0 0 1 573 146.5 V153 Z"><title>2026-07-26: 1</title></path>
+<path class="n_NONE" style="animation-delay:12.46s" d="M562 167 V160.5 A5.5 4.5 0 0 1 573 160.5 V167 Z"><title>2026-07-27: 0</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:12.46s" d="M562 181 V174.5 A5.5 4.5 0 0 1 573 174.5 V181 Z"><title>2026-07-28: 4</title></path>
+<path class="n_NONE" style="animation-delay:12.46s" d="M562 195 V188.5 A5.5 4.5 0 0 1 573 188.5 V195 Z"><title>2026-07-29: 0</title></path>
+<path class="n_THIRD_QUARTILE" style="animation-delay:12.46s" d="M562 209 V202.5 A5.5 4.5 0 0 1 573 202.5 V209 Z"><title>2026-07-30: 5</title></path>
+<path class="n_FOURTH_QUARTILE" style="animation-delay:12.46s" d="M562 223 V216.5 A5.5 4.5 0 0 1 573 216.5 V223 Z"><title>2026-07-31: 12</title></path>
+<path class="n_THIRD_QUARTILE" style="animation-delay:12.46s" d="M562 237 V230.5 A5.5 4.5 0 0 1 573 230.5 V237 Z"><title>2026-08-01: 5</title></path>
+<path class="n_NONE" style="animation-delay:12.81s" d="M576 153 V146.5 A5.5 4.5 0 0 1 587 146.5 V153 Z"><title>2026-08-02: 0</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:12.81s" d="M576 167 V160.5 A5.5 4.5 0 0 1 587 160.5 V167 Z"><title>2026-08-03: 1</title></path>
+<path class="n_NONE" style="animation-delay:12.81s" d="M576 181 V174.5 A5.5 4.5 0 0 1 587 174.5 V181 Z"><title>2026-08-04: 0</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:12.81s" d="M576 195 V188.5 A5.5 4.5 0 0 1 587 188.5 V195 Z"><title>2026-08-05: 1</title></path>
+<path class="n_NONE" style="animation-delay:12.81s" d="M576 209 V202.5 A5.5 4.5 0 0 1 587 202.5 V209 Z"><title>2026-08-06: 0</title></path>
+<path class="n_NONE" style="animation-delay:12.81s" d="M576 223 V216.5 A5.5 4.5 0 0 1 587 216.5 V223 Z"><title>2026-08-07: 0</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:12.81s" d="M576 237 V230.5 A5.5 4.5 0 0 1 587 230.5 V237 Z"><title>2026-08-08: 1</title></path>
+<path class="n_NONE" style="animation-delay:13.15s" d="M590 153 V146.5 A5.5 4.5 0 0 1 601 146.5 V153 Z"><title>2026-08-09: 0</title></path>
+<path class="n_NONE" style="animation-delay:13.15s" d="M590 167 V160.5 A5.5 4.5 0 0 1 601 160.5 V167 Z"><title>2026-08-10: 0</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:13.15s" d="M590 181 V174.5 A5.5 4.5 0 0 1 601 174.5 V181 Z"><title>2026-08-11: 2</title></path>
+<path class="n_NONE" style="animation-delay:13.15s" d="M590 195 V188.5 A5.5 4.5 0 0 1 601 188.5 V195 Z"><title>2026-08-12: 0</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:13.15s" d="M590 209 V202.5 A5.5 4.5 0 0 1 601 202.5 V209 Z"><title>2026-08-13: 1</title></path>
+<path class="n_THIRD_QUARTILE" style="animation-delay:13.15s" d="M590 223 V216.5 A5.5 4.5 0 0 1 601 216.5 V223 Z"><title>2026-08-14: 5</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:13.15s" d="M590 237 V230.5 A5.5 4.5 0 0 1 601 230.5 V237 Z"><title>2026-08-15: 4</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:13.50s" d="M604 153 V146.5 A5.5 4.5 0 0 1 615 146.5 V153 Z"><title>2026-08-16: 1</title></path>
+<path class="n_NONE" style="animation-delay:13.50s" d="M604 167 V160.5 A5.5 4.5 0 0 1 615 160.5 V167 Z"><title>2026-08-17: 0</title></path>
+<path class="n_THIRD_QUARTILE" style="animation-delay:13.50s" d="M604 181 V174.5 A5.5 4.5 0 0 1 615 174.5 V181 Z"><title>2026-08-18: 6</title></path>
+<path class="n_NONE" style="animation-delay:13.50s" d="M604 195 V188.5 A5.5 4.5 0 0 1 615 188.5 V195 Z"><title>2026-08-19: 0</title></path>
+<path class="n_NONE" style="animation-delay:13.50s" d="M604 209 V202.5 A5.5 4.5 0 0 1 615 202.5 V209 Z"><title>2026-08-20: 0</title></path>
+<path class="n_THIRD_QUARTILE" style="animation-delay:13.50s" d="M604 223 V216.5 A5.5 4.5 0 0 1 615 216.5 V223 Z"><title>2026-08-21: 7</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:13.50s" d="M604 237 V230.5 A5.5 4.5 0 0 1 615 230.5 V237 Z"><title>2026-08-22: 1</title></path>
+<path class="n_NONE" style="animation-delay:13.85s" d="M618 153 V146.5 A5.5 4.5 0 0 1 629 146.5 V153 Z"><title>2026-08-23: 0</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:13.85s" d="M618 167 V160.5 A5.5 4.5 0 0 1 629 160.5 V167 Z"><title>2026-08-24: 1</title></path>
+<path class="n_NONE" style="animation-delay:13.85s" d="M618 181 V174.5 A5.5 4.5 0 0 1 629 174.5 V181 Z"><title>2026-08-25: 0</title></path>
+<path class="n_NONE" style="animation-delay:13.85s" d="M618 195 V188.5 A5.5 4.5 0 0 1 629 188.5 V195 Z"><title>2026-08-26: 0</title></path>
+<path class="n_NONE" style="animation-delay:13.85s" d="M618 209 V202.5 A5.5 4.5 0 0 1 629 202.5 V209 Z"><title>2026-08-27: 0</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:13.85s" d="M618 223 V216.5 A5.5 4.5 0 0 1 629 216.5 V223 Z"><title>2026-08-28: 2</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:13.85s" d="M618 237 V230.5 A5.5 4.5 0 0 1 629 230.5 V237 Z"><title>2026-08-29: 2</title></path>
+<path class="n_NONE" style="animation-delay:14.19s" d="M632 153 V146.5 A5.5 4.5 0 0 1 643 146.5 V153 Z"><title>2026-08-30: 0</title></path>
+<path class="n_NONE" style="animation-delay:14.19s" d="M632 167 V160.5 A5.5 4.5 0 0 1 643 160.5 V167 Z"><title>2026-08-31: 0</title></path>
+<path class="n_NONE" style="animation-delay:14.19s" d="M632 181 V174.5 A5.5 4.5 0 0 1 643 174.5 V181 Z"><title>2026-09-01: 0</title></path>
+<path class="n_THIRD_QUARTILE" style="animation-delay:14.19s" d="M632 195 V188.5 A5.5 4.5 0 0 1 643 188.5 V195 Z"><title>2026-09-02: 5</title></path>
+<path class="n_FOURTH_QUARTILE" style="animation-delay:14.19s" d="M632 209 V202.5 A5.5 4.5 0 0 1 643 202.5 V209 Z"><title>2026-09-03: 12</title></path>
+<path class="n_FOURTH_QUARTILE" style="animation-delay:14.19s" d="M632 223 V216.5 A5.5 4.5 0 0 1 643 216.5 V223 Z"><title>2026-09-04: 10</title></path>
+<path class="n_FOURTH_QUARTILE" style="animation-delay:14.19s" d="M632 237 V230.5 A5.5 4.5 0 0 1 643 230.5 V237 Z"><title>2026-09-05: 8</title></path>
+<path class="n_NONE" style="animation-delay:14.54s" d="M646 153 V146.5 A5.5 4.5 0 0 1 657 146.5 V153 Z"><title>2026-09-06: 0</title></path>
+<path class="n_THIRD_QUARTILE" style="animation-delay:14.54s" d="M646 167 V160.5 A5.5 4.5 0 0 1 657 160.5 V167 Z"><title>2026-09-07: 7</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:14.54s" d="M646 181 V174.5 A5.5 4.5 0 0 1 657 174.5 V181 Z"><title>2026-09-08: 1</title></path>
+<path class="n_NONE" style="animation-delay:14.54s" d="M646 195 V188.5 A5.5 4.5 0 0 1 657 188.5 V195 Z"><title>2026-09-09: 0</title></path>
+<path class="n_NONE" style="animation-delay:14.54s" d="M646 209 V202.5 A5.5 4.5 0 0 1 657 202.5 V209 Z"><title>2026-09-10: 0</title></path>
+<path class="n_NONE" style="animation-delay:14.54s" d="M646 223 V216.5 A5.5 4.5 0 0 1 657 216.5 V223 Z"><title>2026-09-11: 0</title></path>
+<path class="n_NONE" style="animation-delay:14.54s" d="M646 237 V230.5 A5.5 4.5 0 0 1 657 230.5 V237 Z"><title>2026-09-12: 0</title></path>
+<path class="n_NONE" style="animation-delay:14.88s" d="M660 153 V146.5 A5.5 4.5 0 0 1 671 146.5 V153 Z"><title>2026-09-13: 0</title></path>
+<path class="n_NONE" style="animation-delay:14.88s" d="M660 167 V160.5 A5.5 4.5 0 0 1 671 160.5 V167 Z"><title>2026-09-14: 0</title></path>
+<path class="n_NONE" style="animation-delay:14.88s" d="M660 181 V174.5 A5.5 4.5 0 0 1 671 174.5 V181 Z"><title>2026-09-15: 0</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:14.88s" d="M660 195 V188.5 A5.5 4.5 0 0 1 671 188.5 V195 Z"><title>2026-09-16: 1</title></path>
+<path class="n_NONE" style="animation-delay:14.88s" d="M660 209 V202.5 A5.5 4.5 0 0 1 671 202.5 V209 Z"><title>2026-09-17: 0</title></path>
+<path class="n_FOURTH_QUARTILE" style="animation-delay:14.88s" d="M660 223 V216.5 A5.5 4.5 0 0 1 671 216.5 V223 Z"><title>2026-09-18: 9</title></path>
+<path class="n_NONE" style="animation-delay:14.88s" d="M660 237 V230.5 A5.5 4.5 0 0 1 671 230.5 V237 Z"><title>2026-09-19: 0</title></path>
+<path class="n_NONE" style="animation-delay:15.23s" d="M674 153 V146.5 A5.5 4.5 0 0 1 685 146.5 V153 Z"><title>2026-09-20: 0</title></path>
+<path class="n_NONE" style="animation-delay:15.23s" d="M674 167 V160.5 A5.5 4.5 0 0 1 685 160.5 V167 Z"><title>2026-09-21: 0</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:15.23s" d="M674 181 V174.5 A5.5 4.5 0 0 1 685 174.5 V181 Z"><title>2026-09-22: 1</title></path>
+<path class="n_NONE" style="animation-delay:15.23s" d="M674 195 V188.5 A5.5 4.5 0 0 1 685 188.5 V195 Z"><title>2026-09-23: 0</title></path>
+<path class="n_NONE" style="animation-delay:15.23s" d="M674 209 V202.5 A5.5 4.5 0 0 1 685 202.5 V209 Z"><title>2026-09-24: 0</title></path>
+<path class="n_NONE" style="animation-delay:15.23s" d="M674 223 V216.5 A5.5 4.5 0 0 1 685 216.5 V223 Z"><title>2026-09-25: 0</title></path>
+<path class="n_NONE" style="animation-delay:15.23s" d="M674 237 V230.5 A5.5 4.5 0 0 1 685 230.5 V237 Z"><title>2026-09-26: 0</title></path>
+<path class="n_NONE" style="animation-delay:15.58s" d="M688 153 V146.5 A5.5 4.5 0 0 1 699 146.5 V153 Z"><title>2026-09-27: 0</title></path>
+<path class="n_NONE" style="animation-delay:15.58s" d="M688 167 V160.5 A5.5 4.5 0 0 1 699 160.5 V167 Z"><title>2026-09-28: 0</title></path>
+<path class="n_FOURTH_QUARTILE" style="animation-delay:15.58s" d="M688 181 V174.5 A5.5 4.5 0 0 1 699 174.5 V181 Z"><title>2026-09-29: 12</title></path>
+<path class="n_NONE" style="animation-delay:15.58s" d="M688 195 V188.5 A5.5 4.5 0 0 1 699 188.5 V195 Z"><title>2026-09-30: 0</title></path>
+<path class="n_NONE" style="animation-delay:15.58s" d="M688 209 V202.5 A5.5 4.5 0 0 1 699 202.5 V209 Z"><title>2026-10-01: 0</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:15.58s" d="M688 223 V216.5 A5.5 4.5 0 0 1 699 216.5 V223 Z"><title>2026-10-02: 1</title></path>
+<path class="n_NONE" style="animation-delay:15.58s" d="M688 237 V230.5 A5.5 4.5 0 0 1 699 230.5 V237 Z"><title>2026-10-03: 0</title></path>
+<path class="n_FOURTH_QUARTILE" style="animation-delay:15.92s" d="M702 153 V146.5 A5.5 4.5 0 0 1 713 146.5 V153 Z"><title>2026-10-04: 11</title></path>
+<path class="n_NONE" style="animation-delay:15.92s" d="M702 167 V160.5 A5.5 4.5 0 0 1 713 160.5 V167 Z"><title>2026-10-05: 0</title></path>
+<path class="n_NONE" style="animation-delay:15.92s" d="M702 181 V174.5 A5.5 4.5 0 0 1 713 174.5 V181 Z"><title>2026-10-06: 0</title></path>
+<path class="n_FOURTH_QUARTILE" style="animation-delay:15.92s" d="M702 195 V188.5 A5.5 4.5 0 0 1 713 188.5 V195 Z"><title>2026-10-07: 9</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:15.92s" d="M702 209 V202.5 A5.5 4.5 0 0 1 713 202.5 V209 Z"><title>2026-10-08: 4</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:15.92s" d="M702 223 V216.5 A5.5 4.5 0 0 1 713 216.5 V223 Z"><title>2026-10-09: 1</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:15.92s" d="M702 237 V230.5 A5.5 4.5 0 0 1 713 230.5 V237 Z"><title>2026-10-10: 1</title></path>
+<path class="n_NONE" style="animation-delay:16.27s" d="M716 153 V146.5 A5.5 4.5 0 0 1 727 146.5 V153 Z"><title>2026-10-11: 0</title></path>
+<path class="n_NONE" style="animation-delay:16.27s" d="M716 167 V160.5 A5.5 4.5 0 0 1 727 160.5 V167 Z"><title>2026-10-12: 0</title></path>
+<path class="n_NONE" style="animation-delay:16.27s" d="M716 181 V174.5 A5.5 4.5 0 0 1 727 174.5 V181 Z"><title>2026-10-13: 0</title></path>
+<path class="n_NONE" style="animation-delay:16.27s" d="M716 195 V188.5 A5.5 4.5 0 0 1 727 188.5 V195 Z"><title>2026-10-14: 0</title></path>
+<path class="n_NONE" style="animation-delay:16.27s" d="M716 209 V202.5 A5.5 4.5 0 0 1 727 202.5 V209 Z"><title>2026-10-15: 0</title></path>
+<path class="n_NONE" style="animation-delay:16.27s" d="M716 223 V216.5 A5.5 4.5 0 0 1 727 216.5 V223 Z"><title>2026-10-16: 0</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:16.27s" d="M716 237 V230.5 A5.5 4.5 0 0 1 727 230.5 V237 Z"><title>2026-10-17: 1</title></path>
+<path class="n_THIRD_QUARTILE" style="animation-delay:16.62s" d="M730 153 V146.5 A5.5 4.5 0 0 1 741 146.5 V153 Z"><title>2026-10-18: 7</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:16.62s" d="M730 167 V160.5 A5.5 4.5 0 0 1 741 160.5 V167 Z"><title>2026-10-19: 1</title></path>
+<path class="n_NONE" style="animation-delay:16.62s" d="M730 181 V174.5 A5.5 4.5 0 0 1 741 174.5 V181 Z"><title>2026-10-20: 0</title></path>
+<path class="n_NONE" style="animation-delay:16.62s" d="M730 195 V188.5 A5.5 4.5 0 0 1 741 188.5 V195 Z"><title>2026-10-21: 0</title></path>
+<path class="n_NONE" style="animation-delay:16.62s" d="M730 209 V202.5 A5.5 4.5 0 0 1 741 202.5 V209 Z"><title>2026-10-22: 0</title></path>
+<path class="n_NONE" style="animation-delay:16.62s" d="M730 223 V216.5 A5.5 4.5 0 0 1 741 216.5 V223 Z"><title>2026-10-23: 0</title></path>
+<path class="n_NONE" style="animation-delay:16.62s" d="M730 237 V230.5 A5.5 4.5 0 0 1 741 230.5 V237 Z"><title>2026-10-24: 0</title></path>
+<path class="n_SECOND_QUARTILE" style="animation-delay:16.96s" d="M744 153 V146.5 A5.5 4.5 0 0 1 755 146.5 V153 Z"><title>2026-10-25: 4</title></path>
+<path class="n_NONE" style="animation-delay:16.96s" d="M744 167 V160.5 A5.5 4.5 0 0 1 755 160.5 V167 Z"><title>2026-10-26: 0</title></path>
+<path class="n_THIRD_QUARTILE" style="animation-delay:16.96s" d="M744 181 V174.5 A5.5 4.5 0 0 1 755 174.5 V181 Z"><title>2026-10-27: 5</title></path>
+<path class="n_NONE" style="animation-delay:16.96s" d="M744 195 V188.5 A5.5 4.5 0 0 1 755 188.5 V195 Z"><title>2026-10-28: 0</title></path>
+<path class="n_NONE" style="animation-delay:16.96s" d="M744 209 V202.5 A5.5 4.5 0 0 1 755 202.5 V209 Z"><title>2026-10-29: 0</title></path>
+<path class="n_NONE" style="animation-delay:16.96s" d="M744 223 V216.5 A5.5 4.5 0 0 1 755 216.5 V223 Z"><title>2026-10-30: 0</title></path>
+<path class="n_NONE" style="animation-delay:16.96s" d="M744 237 V230.5 A5.5 4.5 0 0 1 755 230.5 V237 Z"><title>2026-10-31: 0</title></path>
+<path class="n_NONE" style="animation-delay:17.31s" d="M758 153 V146.5 A5.5 4.5 0 0 1 769 146.5 V153 Z"><title>2026-11-01: 0</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:17.31s" d="M758 167 V160.5 A5.5 4.5 0 0 1 769 160.5 V167 Z"><title>2026-11-02: 1</title></path>
+<path class="n_NONE" style="animation-delay:17.31s" d="M758 181 V174.5 A5.5 4.5 0 0 1 769 174.5 V181 Z"><title>2026-11-03: 0</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:17.31s" d="M758 195 V188.5 A5.5 4.5 0 0 1 769 188.5 V195 Z"><title>2026-11-04: 2</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:17.31s" d="M758 209 V202.5 A5.5 4.5 0 0 1 769 202.5 V209 Z"><title>2026-11-05: 1</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:17.31s" d="M758 223 V216.5 A5.5 4.5 0 0 1 769 216.5 V223 Z"><title>2026-11-06: 2</title></path>
+<path class="n_NONE" style="animation-delay:17.31s" d="M758 237 V230.5 A5.5 4.5 0 0 1 769 230.5 V237 Z"><title>2026-11-07: 0</title></path>
+<path class="n_NONE" style="animation-delay:17.65s" d="M772 153 V146.5 A5.5 4.5 0 0 1 783 146.5 V153 Z"><title>2026-11-08: 0</title></path>
+<path class="n_THIRD_QUARTILE" style="animation-delay:17.65s" d="M772 167 V160.5 A5.5 4.5 0 0 1 783 160.5 V167 Z"><title>2026-11-09: 7</title></path>
+<path class="n_FOURTH_QUARTILE" style="animation-delay:17.65s" d="M772 181 V174.5 A5.5 4.5 0 0 1 783 174.5 V181 Z"><title>2026-11-10: 8</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:17.65s" d="M772 195 V188.5 A5.5 4.5 0 0 1 783 188.5 V195 Z"><title>2026-11-11: 2</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:17.65s" d="M772 209 V202.5 A5.5 4.5 0 0 1 783 202.5 V209 Z"><title>2026-11-12: 1</title></path>
+<path class="n_NONE" style="animation-delay:17.65s" d="M772 223 V216.5 A5.5 4.5 0 0 1 783 216.5 V223 Z"><title>2026-11-13: 0</title></path>
+<path class="n_NONE" style="animation-delay:17.65s" d="M772 237 V230.5 A5.5 4.5 0 0 1 783 230.5 V237 Z"><title>2026-11-14: 0</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:18.00s" d="M786 153 V146.5 A5.5 4.5 0 0 1 797 146.5 V153 Z"><title>2026-11-15: 1</title></path>
+<path class="n_FIRST_QUARTILE" style="animation-delay:18.00s" d="M786 167 V160.5 A5.5 4.5 0 0 1 797 160.5 V167 Z"><title>2026-11-16: 1</title></path>
+<path class="n_THIRD_QUARTILE" style="animation-delay:18.00s" d="M786 181 V174.5 A5.5 4.5 0 0 1 797 174.5 V181 Z"><title>2026-11-17: 6</title></path>
+<text class="mono" x="58" y="254" font-size="10" fill="#9d9196" fill-opacity=".8">nov</text>
+<text class="mono" x="100" y="254" font-size="10" fill="#9d9196" fill-opacity=".8">dez</text>
+<text class="mono" x="156" y="254" font-size="10" fill="#9d9196" fill-opacity=".8">jan</text>
+<text class="mono" x="212" y="254" font-size="10" fill="#9d9196" fill-opacity=".8">fev</text>
+<text class="mono" x="268" y="254" font-size="10" fill="#9d9196" fill-opacity=".8">mar</text>
+<text class="mono" x="338" y="254" font-size="10" fill="#9d9196" fill-opacity=".8">abr</text>
+<text class="mono" x="394" y="254" font-size="10" fill="#9d9196" fill-opacity=".8">mai</text>
+<text class="mono" x="464" y="254" font-size="10" fill="#9d9196" fill-opacity=".8">jun</text>
+<text class="mono" x="520" y="254" font-size="10" fill="#9d9196" fill-opacity=".8">jul</text>
+<text class="mono" x="576" y="254" font-size="10" fill="#9d9196" fill-opacity=".8">ago</text>
+<text class="mono" x="646" y="254" font-size="10" fill="#9d9196" fill-opacity=".8">set</text>
+<text class="mono" x="702" y="254" font-size="10" fill="#9d9196" fill-opacity=".8">out</text>
+<text class="mono" x="758" y="254" font-size="10" fill="#9d9196" fill-opacity=".8">nov</text>
+<g class="nevoa" filter="url(#borra)" opacity=".3"><ellipse cx="260" cy="248" rx="260" ry="12" fill="#9d9196" fill-opacity=".5"/><ellipse cx="640" cy="252" rx="240" ry="12" fill="#9d9196" fill-opacity=".5"/></g>
+<g transform="translate(26,83)"><g class="bando"><g class="voa">
+  <ellipse class="gota" cx="37.5" cy="29" rx="2" ry="2.8" fill="#e0446c"/>
+  <g class="asa1"><rect x="3" y="0" width="3.25" height="3.25" fill="#7d6a72"/><rect x="69" y="0" width="3.25" height="3.25" fill="#7d6a72"/><rect x="0" y="3" width="3.25" height="3.25" fill="#7d6a72"/><rect x="3" y="3" width="3.25" height="3.25" fill="#2e1f25"/><rect x="6" y="3" width="3.25" height="3.25" fill="#7d6a72"/><rect x="66" y="3" width="3.25" height="3.25" fill="#7d6a72"/><rect x="69" y="3" width="3.25" height="3.25" fill="#2e1f25"/><rect x="72" y="3" width="3.25" height="3.25" fill="#7d6a72"/><rect x="0" y="6" width="3.25" height="3.25" fill="#7d6a72"/><rect x="3" y="6" width="6.25" height="3.25" fill="#2e1f25"/><rect x="9" y="6" width="3.25" height="3.25" fill="#7d6a72"/><rect x="33" y="6" width="3.25" height="3.25" fill="#7d6a72"/><rect x="39" y="6" width="3.25" height="3.25" fill="#7d6a72"/><rect x="63" y="6" width="3.25" height="3.25" fill="#7d6a72"/><rect x="66" y="6" width="6.25" height="3.25" fill="#2e1f25"/><rect x="72" y="6" width="3.25" height="3.25" fill="#7d6a72"/><rect x="0" y="9" width="3.25" height="3.25" fill="#7d6a72"/><rect x="3" y="9" width="9.25" height="3.25" fill="#2e1f25"/><rect x="12" y="9" width="3.25" height="3.25" fill="#7d6a72"/><rect x="30" y="9" width="3.25" height="3.25" fill="#7d6a72"/><rect x="33" y="9" width="3.25" height="3.25" fill="#140f11"/><rect x="36" y="9" width="3.25" height="3.25" fill="#7d6a72"/><rect x="39" y="9" width="3.25" height="3.25" fill="#140f11"/><rect x="42" y="9" width="3.25" height="3.25" fill="#7d6a72"/><rect x="60" y="9" width="3.25" height="3.25" fill="#7d6a72"/><rect x="63" y="9" width="9.25" height="3.25" fill="#2e1f25"/><rect x="72" y="9" width="3.25" height="3.25" fill="#7d6a72"/><rect x="0" y="12" width="3.25" height="3.25" fill="#7d6a72"/><rect x="3" y="12" width="12.25" height="3.25" fill="#2e1f25"/><rect x="15" y="12" width="6.25" height="3.25" fill="#7d6a72"/><rect x="30" y="12" width="3.25" height="3.25" fill="#7d6a72"/><rect x="33" y="12" width="9.25" height="3.25" fill="#140f11"/><rect x="42" y="12" width="3.25" height="3.25" fill="#7d6a72"/><rect x="54" y="12" width="6.25" height="3.25" fill="#7d6a72"/><rect x="60" y="12" width="12.25" height="3.25" fill="#2e1f25"/><rect x="72" y="12" width="3.25" height="3.25" fill="#7d6a72"/><rect x="3" y="15" width="3.25" height="3.25" fill="#7d6a72"/><rect x="6" y="15" width="15.25" height="3.25" fill="#2e1f25"/><rect x="21" y="15" width="9.25" height="3.25" fill="#7d6a72"/><rect x="30" y="15" width="15.25" height="3.25" fill="#140f11"/><rect x="45" y="15" width="9.25" height="3.25" fill="#7d6a72"/><rect x="54" y="15" width="15.25" height="3.25" fill="#2e1f25"/><rect x="69" y="15" width="3.25" height="3.25" fill="#7d6a72"/><rect x="3" y="18" width="3.25" height="3.25" fill="#7d6a72"/><rect x="6" y="18" width="21.25" height="3.25" fill="#2e1f25"/><rect x="27" y="18" width="6.25" height="3.25" fill="#140f11"/><rect x="33" y="18" width="3.25" height="3.25" fill="#e0446c"/><rect x="36" y="18" width="3.25" height="3.25" fill="#140f11"/><rect x="39" y="18" width="3.25" height="3.25" fill="#e0446c"/><rect x="42" y="18" width="6.25" height="3.25" fill="#140f11"/><rect x="48" y="18" width="21.25" height="3.25" fill="#2e1f25"/><rect x="69" y="18" width="3.25" height="3.25" fill="#7d6a72"/><rect x="6" y="21" width="3.25" height="3.25" fill="#7d6a72"/><rect x="9" y="21" width="18.25" height="3.25" fill="#2e1f25"/><rect x="27" y="21" width="21.25" height="3.25" fill="#140f11"/><rect x="48" y="21" width="18.25" height="3.25" fill="#2e1f25"/><rect x="66" y="21" width="3.25" height="3.25" fill="#7d6a72"/><rect x="9" y="24" width="3.25" height="3.25" fill="#7d6a72"/><rect x="12" y="24" width="6.25" height="3.25" fill="#2e1f25"/><rect x="18" y="24" width="3.25" height="3.25" fill="#7d6a72"/><rect x="21" y="24" width="6.25" height="3.25" fill="#2e1f25"/><rect x="27" y="24" width="6.25" height="3.25" fill="#140f11"/><rect x="33" y="24" width="3.25" height="3.25" fill="#f3eef0"/><rect x="36" y="24" width="3.25" height="3.25" fill="#140f11"/><rect x="39" y="24" width="3.25" height="3.25" fill="#f3eef0"/><rect x="42" y="24" width="6.25" height="3.25" fill="#140f11"/><rect x="48" y="24" width="6.25" height="3.25" fill="#2e1f25"/><rect x="54" y="24" width="3.25" height="3.25" fill="#7d6a72"/><rect x="57" y="24" width="6.25" height="3.25" fill="#2e1f25"/><rect x="63" y="24" width="3.25" height="3.25" fill="#7d6a72"/><rect x="12" y="27" width="6.25" height="3.25" fill="#7d6a72"/><rect x="21" y="27" width="6.25" height="3.25" fill="#7d6a72"/><rect x="27" y="27" width="21.25" height="3.25" fill="#140f11"/><rect x="48" y="27" width="6.25" height="3.25" fill="#7d6a72"/><rect x="57" y="27" width="6.25" height="3.25" fill="#7d6a72"/><rect x="27" y="30" width="3.25" height="3.25" fill="#7d6a72"/><rect x="30" y="30" width="15.25" height="3.25" fill="#140f11"/><rect x="45" y="30" width="3.25" height="3.25" fill="#7d6a72"/><rect x="30" y="33" width="3.25" height="3.25" fill="#7d6a72"/><rect x="33" y="33" width="3.25" height="3.25" fill="#140f11"/><rect x="36" y="33" width="3.25" height="3.25" fill="#7d6a72"/><rect x="39" y="33" width="3.25" height="3.25" fill="#140f11"/><rect x="42" y="33" width="3.25" height="3.25" fill="#7d6a72"/><rect x="33" y="36" width="3.25" height="3.25" fill="#7d6a72"/><rect x="39" y="36" width="3.25" height="3.25" fill="#7d6a72"/></g><g class="asa2"><rect x="33" y="6" width="3.25" height="3.25" fill="#7d6a72"/><rect x="39" y="6" width="3.25" height="3.25" fill="#7d6a72"/><rect x="30" y="9" width="3.25" height="3.25" fill="#7d6a72"/><rect x="33" y="9" width="3.25" height="3.25" fill="#140f11"/><rect x="36" y="9" width="3.25" height="3.25" fill="#7d6a72"/><rect x="39" y="9" width="3.25" height="3.25" fill="#140f11"/><rect x="42" y="9" width="3.25" height="3.25" fill="#7d6a72"/><rect x="30" y="12" width="3.25" height="3.25" fill="#7d6a72"/><rect x="33" y="12" width="9.25" height="3.25" fill="#140f11"/><rect x="42" y="12" width="3.25" height="3.25" fill="#7d6a72"/><rect x="15" y="15" width="15.25" height="3.25" fill="#7d6a72"/><rect x="30" y="15" width="15.25" height="3.25" fill="#140f11"/><rect x="45" y="15" width="15.25" height="3.25" fill="#7d6a72"/><rect x="9" y="18" width="6.25" height="3.25" fill="#7d6a72"/><rect x="15" y="18" width="12.25" height="3.25" fill="#2e1f25"/><rect x="27" y="18" width="6.25" height="3.25" fill="#140f11"/><rect x="33" y="18" width="3.25" height="3.25" fill="#e0446c"/><rect x="36" y="18" width="3.25" height="3.25" fill="#140f11"/><rect x="39" y="18" width="3.25" height="3.25" fill="#e0446c"/><rect x="42" y="18" width="6.25" height="3.25" fill="#140f11"/><rect x="48" y="18" width="12.25" height="3.25" fill="#2e1f25"/><rect x="60" y="18" width="6.25" height="3.25" fill="#7d6a72"/><rect x="6" y="21" width="3.25" height="3.25" fill="#7d6a72"/><rect x="9" y="21" width="18.25" height="3.25" fill="#2e1f25"/><rect x="27" y="21" width="21.25" height="3.25" fill="#140f11"/><rect x="48" y="21" width="18.25" height="3.25" fill="#2e1f25"/><rect x="66" y="21" width="3.25" height="3.25" fill="#7d6a72"/><rect x="3" y="24" width="3.25" height="3.25" fill="#7d6a72"/><rect x="6" y="24" width="21.25" height="3.25" fill="#2e1f25"/><rect x="27" y="24" width="6.25" height="3.25" fill="#140f11"/><rect x="33" y="24" width="3.25" height="3.25" fill="#f3eef0"/><rect x="36" y="24" width="3.25" height="3.25" fill="#140f11"/><rect x="39" y="24" width="3.25" height="3.25" fill="#f3eef0"/><rect x="42" y="24" width="6.25" height="3.25" fill="#140f11"/><rect x="48" y="24" width="21.25" height="3.25" fill="#2e1f25"/><rect x="69" y="24" width="3.25" height="3.25" fill="#7d6a72"/><rect x="0" y="27" width="3.25" height="3.25" fill="#7d6a72"/><rect x="3" y="27" width="21.25" height="3.25" fill="#2e1f25"/><rect x="24" y="27" width="3.25" height="3.25" fill="#7d6a72"/><rect x="27" y="27" width="21.25" height="3.25" fill="#140f11"/><rect x="48" y="27" width="3.25" height="3.25" fill="#7d6a72"/><rect x="51" y="27" width="21.25" height="3.25" fill="#2e1f25"/><rect x="72" y="27" width="3.25" height="3.25" fill="#7d6a72"/><rect x="0" y="30" width="3.25" height="3.25" fill="#7d6a72"/><rect x="3" y="30" width="9.25" height="3.25" fill="#2e1f25"/><rect x="12" y="30" width="3.25" height="3.25" fill="#7d6a72"/><rect x="15" y="30" width="6.25" height="3.25" fill="#2e1f25"/><rect x="21" y="30" width="3.25" height="3.25" fill="#7d6a72"/><rect x="27" y="30" width="3.25" height="3.25" fill="#7d6a72"/><rect x="30" y="30" width="15.25" height="3.25" fill="#140f11"/><rect x="45" y="30" width="3.25" height="3.25" fill="#7d6a72"/><rect x="51" y="30" width="3.25" height="3.25" fill="#7d6a72"/><rect x="54" y="30" width="6.25" height="3.25" fill="#2e1f25"/><rect x="60" y="30" width="3.25" height="3.25" fill="#7d6a72"/><rect x="63" y="30" width="9.25" height="3.25" fill="#2e1f25"/><rect x="72" y="30" width="3.25" height="3.25" fill="#7d6a72"/><rect x="0" y="33" width="3.25" height="3.25" fill="#7d6a72"/><rect x="3" y="33" width="3.25" height="3.25" fill="#2e1f25"/><rect x="6" y="33" width="6.25" height="3.25" fill="#7d6a72"/><rect x="15" y="33" width="6.25" height="3.25" fill="#7d6a72"/><rect x="30" y="33" width="3.25" height="3.25" fill="#7d6a72"/><rect x="33" y="33" width="3.25" height="3.25" fill="#140f11"/><rect x="36" y="33" width="3.25" height="3.25" fill="#7d6a72"/><rect x="39" y="33" width="3.25" height="3.25" fill="#140f11"/><rect x="42" y="33" width="3.25" height="3.25" fill="#7d6a72"/><rect x="54" y="33" width="6.25" height="3.25" fill="#7d6a72"/><rect x="63" y="33" width="6.25" height="3.25" fill="#7d6a72"/><rect x="69" y="33" width="3.25" height="3.25" fill="#2e1f25"/><rect x="72" y="33" width="3.25" height="3.25" fill="#7d6a72"/><rect x="3" y="36" width="3.25" height="3.25" fill="#7d6a72"/><rect x="33" y="36" width="3.25" height="3.25" fill="#7d6a72"/><rect x="39" y="36" width="3.25" height="3.25" fill="#7d6a72"/><rect x="69" y="36" width="3.25" height="3.25" fill="#7d6a72"/></g>
+</g></g></g>
+<text x="62" y="293" font-size="10.5" fill="#9d9196" fill-opacity=".8">dados públicos do GitHub · atualizado em 17/11/2026</text>
+<text class="mono" x="648" y="293" text-anchor="end" font-size="10" fill="#9d9196">sede</text>
+<path d="M654 295 V288.5 A5.5 4.5 0 0 1 665 288.5 V295 Z" fill="#1e1519"/>
+<path d="M668 295 V288.5 A5.5 4.5 0 0 1 679 288.5 V295 Z" fill="#3a0717"/>
+<path d="M682 295 V288.5 A5.5 4.5 0 0 1 693 288.5 V295 Z" fill="#6b0d2b"/>
+<path d="M696 295 V288.5 A5.5 4.5 0 0 1 707 288.5 V295 Z" fill="#a3173f"/>
+<path d="M710 295 V288.5 A5.5 4.5 0 0 1 721 288.5 V295 Z" fill="#e0446c"/>
+<text class="mono" x="728" y="293" font-size="10" fill="#9d9196">banquete</text>
+</g>
+<rect x="1" y="1" width="838" height="300" rx="14" fill="none" stroke="#2e2226" stroke-width="2"/>
+<rect x="8" y="8" width="824" height="286" rx="9" fill="none" stroke="#bdbdca" stroke-opacity=".2"/>
+<g transform="translate(0,0) scale(1,1)">
+  <path d="M14 42 V21 Q14 14 21 14 H42" fill="none" stroke="#bdbdca" stroke-opacity=".75" stroke-width="1.4"/>
+  <path d="M19 31 V24 Q19 19 24 19 H31" fill="none" stroke="#bdbdca" stroke-opacity=".45" stroke-width="1"/>
+  <path d="M14 46 l2.2 3.2 l-2.2 3.2 l-2.2 -3.2 Z M46 14 l3.2 -2.2 l3.2 2.2 l-3.2 2.2 Z" fill="#bdbdca" fill-opacity=".8"/>
+</g>
+<g transform="translate(840,0) scale(-1,1)">
+  <path d="M14 42 V21 Q14 14 21 14 H42" fill="none" stroke="#bdbdca" stroke-opacity=".75" stroke-width="1.4"/>
+  <path d="M19 31 V24 Q19 19 24 19 H31" fill="none" stroke="#bdbdca" stroke-opacity=".45" stroke-width="1"/>
+  <path d="M14 46 l2.2 3.2 l-2.2 3.2 l-2.2 -3.2 Z M46 14 l3.2 -2.2 l3.2 2.2 l-3.2 2.2 Z" fill="#bdbdca" fill-opacity=".8"/>
+</g>
+<g transform="translate(0,302) scale(1,-1)">
+  <path d="M14 42 V21 Q14 14 21 14 H42" fill="none" stroke="#bdbdca" stroke-opacity=".75" stroke-width="1.4"/>
+  <path d="M19 31 V24 Q19 19 24 19 H31" fill="none" stroke="#bdbdca" stroke-opacity=".45" stroke-width="1"/>
+  <path d="M14 46 l2.2 3.2 l-2.2 3.2 l-2.2 -3.2 Z M46 14 l3.2 -2.2 l3.2 2.2 l-3.2 2.2 Z" fill="#bdbdca" fill-opacity=".8"/>
+</g>
+<g transform="translate(840,302) scale(-1,-1)">
+  <path d="M14 42 V21 Q14 14 21 14 H42" fill="none" stroke="#bdbdca" stroke-opacity=".75" stroke-width="1.4"/>
+  <path d="M19 31 V24 Q19 19 24 19 H31" fill="none" stroke="#bdbdca" stroke-opacity=".45" stroke-width="1"/>
+  <path d="M14 46 l2.2 3.2 l-2.2 3.2 l-2.2 -3.2 Z M46 14 l3.2 -2.2 l3.2 2.2 l-3.2 2.2 Z" fill="#bdbdca" fill-opacity=".8"/>
+</g>
+</svg>
