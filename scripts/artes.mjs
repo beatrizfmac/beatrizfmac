@@ -21,7 +21,7 @@ export const CONFIG = {
   rodape: "", // linha pequena com cursor no fim do banner ("" esconde)
 
   // Cabeçalhos de seção (viram dist/secao-<chave>.svg)
-  secoes: { sobre: "Sobre mim", tecnologias: "Tecnologias", formacao: "Formação" },
+  secoes: { sobre: "Sobre mim" },
 
   // Estante (dist/estante.svg)
   estante: {
@@ -42,8 +42,9 @@ export const CONFIG = {
   // Para mostrar, adicione também a seção "projetos" em secoes e as imagens no README.
   projetos: [],
 
-  // Estufa de tecnologias (dist/estufa.svg)
-  tecnologias: ["C#", ".NET", "Java", "JavaScript", "React", "HTML", "CSS", "MySQL", "Git", "GitHub", "VS Code"],
+  // Estufa de tecnologias (dist/estufa.svg). Vazio = não gera.
+  // Exemplo: ["C#", ".NET", "Java", "JavaScript", "React", "HTML", "CSS", "MySQL", "Git"]
+  tecnologias: [],
 
   // Rodapé (dist/rodape.svg)
   despedida: "ATÉ A PRÓXIMA NOITE",
@@ -1270,10 +1271,10 @@ export function gerarTudo(dados, cfg = CONFIG) {
     "divisor.svg": gerarDivisor(),
     "diario.svg": gerarDiario(cfg.diario || {}),
     "estante.svg": gerarEstante(cfg.estante || {}),
-    "estufa.svg": gerarEstufa(cfg.tecnologias || []),
     "oraculo.svg": gerarOraculo(),
     "rodape.svg": gerarRodape(cfg),
   };
+  if ((cfg.tecnologias || []).length) artes["estufa.svg"] = gerarEstufa(cfg.tecnologias);
   for (const [chave, titulo] of Object.entries(cfg.secoes || {})) artes[`secao-${chave}.svg`] = gerarSecao(titulo);
   (cfg.projetos || []).forEach((p, i) => { artes[`projeto-${i + 1}.svg`] = gerarProjeto(p, i); });
   return artes;

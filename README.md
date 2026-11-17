@@ -1,6 +1,6 @@
 <!--
   🥀 Todas as artes deste perfil são geradas por scripts/artes.mjs.
-  Frases, estante, diário e tecnologias ficam no bloco CONFIG, no começo desse arquivo.
+  Frases, estante e diário ficam no bloco CONFIG, no começo desse arquivo.
   Tema: "rosa-negra" (outros temas em modelos/README.md).
 -->
 <div align="center">
@@ -25,18 +25,6 @@ Longe do editor, eu desenho, jogo e visito cafés. Meus jogos favoritos contam h
 <img src="./dist/diario.svg" width="100%" alt="Diário da noite: estudando web com .NET e React, lendo O Estrangeiro de Albert Camus, ouvindo Brat and It's Completely Different but Also Still Brat e jogando Cult of the Lamb">
 
 <img src="./dist/grimorio.svg" width="100%" alt="Herbário de espinhos: as linguagens mais usadas viram velas acesas, os números do GitHub viram relíquias e as conquistas são maldições que despertam">
-
-<img src="./dist/secao-tecnologias.svg" width="100%" alt="Tecnologias">
-
-<img src="./dist/estufa.svg" width="100%" alt="Estufa: C#, .NET, Java, JavaScript, React, HTML, CSS, MySQL, Git, GitHub e VS Code, penduradas como etiquetas numa trepadeira de rosas">
-
-<img src="./dist/secao-formacao.svg" width="100%" alt="Formação">
-
-<div align="center">
-
-**Bacharelado em Ciência da Computação** · Universidade Federal de Alfenas (UNIFAL-MG)
-
-</div>
 
 <img src="./dist/divisor.svg" width="100%" alt="">
 
