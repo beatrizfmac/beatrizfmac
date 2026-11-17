@@ -23,6 +23,7 @@ query($login: String!) {
     repositories(ownerAffiliations: OWNER, isFork: false, privacy: PUBLIC, first: 100) {
       totalCount
       nodes {
+        name
         stargazerCount
         languages(first: 10, orderBy: {field: SIZE, direction: DESC}) {
           edges { size node { name color } }
@@ -64,6 +65,8 @@ async function buscarDados() {
   let estrelas = 0;
   for (const repo of u.repositories.nodes) {
     estrelas += repo.stargazerCount;
+    // o repositório do próprio perfil só tem os scripts das artes: não conta nas linguagens
+    if (repo.name.toLowerCase() === USUARIO.toLowerCase()) continue;
     for (const e of repo.languages.edges) {
       linguagens[e.node.name] = (linguagens[e.node.name] || 0) + e.size;
       cores[e.node.name] = e.node.color || "#c1121f";
