@@ -189,7 +189,7 @@
 <text x="728" y="343" font-size="9" fill="#9d9196">100 contribuições</text><rect x="728" y="353" width="42" height="5" rx="2.5" fill="#2e2226"/>
 <rect class="progresso" x="728" y="353" width="29.4" height="5" rx="2.5" fill="url(#sangue)"/>
 <text x="804" y="359" text-anchor="end" font-size="9.5" class="mono" fill="#9d9196">70/100</text></g>
-<text x="778" y="390" text-anchor="end" font-size="10.5" fill="#9d9196" fill-opacity=".8">relíquias e maldições calculadas a partir dos dados públicos do GitHub · atualizado em 22/11/2026</text>
+<text x="778" y="390" text-anchor="end" font-size="10.5" fill="#9d9196" fill-opacity=".8">relíquias e maldições calculadas a partir dos dados públicos do GitHub · atualizado em 23/11/2026</text>
 </g>
 <rect x="1" y="1" width="838" height="410" rx="14" fill="none" stroke="#2e2226" stroke-width="2"/>
 <rect x="8" y="8" width="824" height="396" rx="9" fill="none" stroke="#bdbdca" stroke-opacity=".2"/>
